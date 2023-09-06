@@ -36,7 +36,7 @@ git clone https://github.com/seu-usuario/fastquest.git
 
 ## Autor
 
-Este projeto foi desenvolvido por [Seu Nome](https://github.com/seu-usuario).
+Este projeto foi desenvolvido por [devwesleyazevedo](https://github.com/devwesleyazevedo/).
 
 ## Licença
 
