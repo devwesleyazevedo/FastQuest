@@ -14,7 +14,7 @@ O FastQuest é um sistema de pesquisa de opinião online que permite coletar dad
 
 1. Clone este repositório para o seu ambiente local.
 
-git clone https://github.com/seu-usuario/fastquest.git
+git clone https://github.com/devwesleyazevedo/fastquest.git
 
 2. Abra o arquivo `index.html` em seu navegador da web.
 
