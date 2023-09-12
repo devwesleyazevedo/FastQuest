@@ -51,8 +51,8 @@
                   <h1>Veja o vídeo abaixo para responder as seguintes perguntas</h1>
                   <h2>Questão tipo apresentação com vídeo</h2>
                   <div class="embed-responsive embed-responsive-16by9">
-                     <video controls class="w-100 embed-responsive-item rounded">
-                        <source src="https://admin.fastquest.net/Uploads/Midias/Controles_FastQuest/2308090348366557253245.mp4" type="video/mp4">
+                     <video controls class="w-100 hover-to-play embed-responsive-item rounded"  loop>
+                        <source src="https://download.fastquest.net:7575/admin/Uploads/Midias/Controles_FastQuest/2308090348366557253245.mp4" type="video/mp4">
                      </video>
                   </div>
                   <p class="mt-3"><b>Nota:</b> Caso o entrevistado pergunte, a entrevista levará 15 minutos.</p>
@@ -64,7 +64,7 @@
                <fieldset>
                   <h1>Veja a imagem abaixo para responder as seguintes perguntas</h1>
                   <h2>Questão tipo apresentação com imagem e zoom ao passar o mouse</h2>
-                  <img id="modal-myImg" class="img-fluid" src="https://admin.fastquest.net/Uploads/Midias/Controles_FastQuest/2308090404554938483245.png" alt="" >
+                  <img id="modal-myImg" class="img-fluid" src="https://download.fastquest.net:7575/admin/Uploads/Midias/Controles_FastQuest/2308090404554938483245.png" alt="" >
                   <div id="modal-myModal" class="modal">
                      <span class="modal-close">&times;</span>
                      <img class="modal-content" id="modal-img01">
@@ -94,7 +94,7 @@
                      <input id="estadoRadio4" name="estadoRadio" type="radio" value="Outros" required/>
                      <label for="estadoRadio4">4. Outro</label>
                   </div>
-                  <div id="outrosEspecifique" style="display: none;">
+                  <div id="outroestado" style="display: none;">
                      <input id="outrosInput" type="text" name="outrosInput" placeholder="Especifique" />
                   </div>
                   <p class="mt-3"><b>Nota:</b> Caso opte por selecionar a opção "Outro", será necessário inserir o estado (UF) correspondente.</p>
@@ -102,37 +102,6 @@
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Estado UF -->
-               <!-- Seção checkbox imagens -->
-               <fieldset>
-                  <h1>Qual(is) a(s) coloração(ões) que usa atualmente?</h1>
-                  <h2>Questão tipo RM com imagens e com selecionador oculto</h2>
-                  <div class="checkboximagens d-flex flex-wrap gap-4">
-                     <div class="inputGroup col-12 col-md-2 col-lg-2">
-                        <input id="imgcheckbox1" name="imgCheckbox" type="checkbox" value="img1" required/>
-                        <label for="imgcheckbox1"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
-                     </div>
-                     <div class="inputGroup col-12 col-md-2 col-lg-2">
-                        <input id="imgcheckbox2" name="imgCheckbox" type="checkbox" value="img2" required/>
-                        <label for="imgcheckbox2"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
-                     </div>
-                     <div class="inputGroup col-12 col-md-2 col-lg-2">
-                        <input id="imgcheckbox3" name="imgCheckbox" type="checkbox" value="img3" required/>
-                        <label for="imgcheckbox3"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
-                     </div>
-                     <div class="inputGroup col-12 col-md-2 col-lg-2">
-                        <input id="imgcheckbox4" name="imgCheckbox" type="checkbox" value="img4" required/>
-                        <label for="imgcheckbox4"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
-                     </div>
-                     <div class="inputGroup col-12 col-md-2 col-lg-2">
-                        <input id="imgcheckbox5" name="imgCheckbox" type="checkbox" value="img5" required/>
-                        <label for="imgcheckbox5"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
-                     </div>
-                  </div>
-                  <p class="mt-3"><b>Nota:</b> Anotar todas as que se aplicam</p>
-                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
-                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
-               </fieldset>
-               <!-- Seção checkbox imagens -->
                <!-- Seção grau de concordância 1 a 5 -->
                <fieldset>
                   <h1>Grau de concordância</h1>
@@ -164,54 +133,8 @@
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção grau de concordância 1 a 5 -->
-               <!-- Seção grau de satisfação com estrelas-->
-               <fieldset>
-                  <h1>Grau de satisfação</h1>
-                  <h2>Questão tipo RU escala de satisfação - com estrelas</h2>
-                  <div class="rating d-flex justify-content-between gap-4 align-items-center">
-                     <div class="inputGroupStar">
-                        <div class="mx-auto d-flex justify-content-center align-items-center">
-                           <input type="radio" id="star5" name="rating" value="5" required>
-                           <label for="star5" title="5 estrelas">&#9733;</label>
-                        </div>
-                        <span>Excelente</span>
-                     </div>
-                     <div class="inputGroupStar">
-                        <div class="mx-auto d-flex justify-content-center align-items-center">
-                           <input type="radio" id="star4" name="rating" value="4" required>
-                           <label for="star4" title="4 estrelas">&#9733;</label>
-                        </div>
-                        <span>Bom</span>
-                     </div>
-                     <div class="inputGroupStar">
-                        <div class="mx-auto d-flex justify-content-center align-items-center">
-                           <input type="radio" id="star3" name="rating" value="3" required>
-                           <label for="star3" title="3 estrelas">&#9733;</label>
-                        </div>
-                        <span>Regular</span>
-                     </div>
-                     <div class="inputGroupStar">
-                        <div class="mx-auto d-flex justify-content-center align-items-center">
-                           <input type="radio" id="star2" name="rating" value="2" required>
-                           <label for="star2" title="2 estrelas">&#9733;</label>
-                        </div>
-                        <span>Ruim </span>
-                     </div>
-                     <div class="inputGroupStar">
-                        <div class="mx-auto d-flex justify-content-center align-items-center">
-                           <input type="radio" id="star1" name="rating" value="1" required>
-                           <label for="star1" title="1 estrela">&#9733;</label>
-                        </div>
-                        <span>Péssimo</span>
-                     </div>
-                  </div>
-                  <p class="mt-3"><b>Nota:</b> As estrelas se acendem conforme a passagem do ponteiro do mouse.</p>
-                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
-                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
-               </fieldset>
-               <!-- Seção grau de satisfação com estrelas-->
-               <!-- Seção grau de concordância 0 a 10 -->
-               <fieldset>
+                <!-- Seção grau de concordância 0 a 10 -->
+                <fieldset>
                   <h1>Grau de concordância</h1>
                   <h2>Questão tipo RU termômetro (0 a 10)</h2>
                   <div class="navegacaosatisfation d-flex justify-content-between align-items-center">
@@ -265,10 +188,140 @@
                      </div>
                   </div>
                   <p class="mt-3"><b>Nota:</b> Qual número melhor representa sua concordância.</p>
-                  <input type="submit" name="submit" class="submit action-button" value="Enviar"/>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção grau de concordância 0 a 10 -->
+               <!-- Seção grau de satisfação com estrelas-->
+               <fieldset>
+                  <h1>Grau de satisfação</h1>
+                  <h2>Questão tipo RU escala de satisfação - com estrelas</h2>
+                  <div class="rating d-flex justify-content-between gap-4 align-items-center">
+                     <div class="inputGroupStar">
+                        <div class="mx-auto d-flex justify-content-center align-items-center">
+                           <input type="radio" id="star5" name="rating" value="5" required>
+                           <label for="star5" title="5 estrelas">&#9733;</label>
+                        </div>
+                        <span>Excelente</span>
+                     </div>
+                     <div class="inputGroupStar">
+                        <div class="mx-auto d-flex justify-content-center align-items-center">
+                           <input type="radio" id="star4" name="rating" value="4" required>
+                           <label for="star4" title="4 estrelas">&#9733;</label>
+                        </div>
+                        <span>Bom</span>
+                     </div>
+                     <div class="inputGroupStar">
+                        <div class="mx-auto d-flex justify-content-center align-items-center">
+                           <input type="radio" id="star3" name="rating" value="3" required>
+                           <label for="star3" title="3 estrelas">&#9733;</label>
+                        </div>
+                        <span>Regular</span>
+                     </div>
+                     <div class="inputGroupStar">
+                        <div class="mx-auto d-flex justify-content-center align-items-center">
+                           <input type="radio" id="star2" name="rating" value="2" required>
+                           <label for="star2" title="2 estrelas">&#9733;</label>
+                        </div>
+                        <span>Ruim </span>
+                     </div>
+                     <div class="inputGroupStar">
+                        <div class="mx-auto d-flex justify-content-center align-items-center">
+                           <input type="radio" id="star1" name="rating" value="1" required>
+                           <label for="star1" title="1 estrela">&#9733;</label>
+                        </div>
+                        <span>Péssimo</span>
+                     </div>
+                  </div>
+                  <p class="mt-3"><b>Nota:</b> As estrelas se acendem conforme a passagem do ponteiro do mouse.</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção grau de satisfação com estrelas-->
+               <!-- Seção Banco -->
+               <fieldset>
+                  <h1>Em quais bancos você tem conta corrente?</h1>
+                  <h2>Questão tipo RM - com outros (especifique) e código exclusivo (nenhum)</h2>
+                  <div class="inputGroup">
+                     <input id="bancoRadio1" name="bancoRadio" type="radio" value="SP" required/>
+                     <label for="bancoRadio1">Banco do Brasil</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio2" name="bancoRadio" type="radio" value="RJ" required/>
+                     <label for="bancoRadio2">Bradesco</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio3" name="bancoRadio" type="radio" value="MG" required/>
+                     <label for="bancoRadio3">Caixa Econômica Federal</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio4" name="bancoRadio" type="radio" value="Outros" required/>
+                     <label for="bancoRadio4">Itaú</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio5" name="bancoRadio" type="radio" value="Outros" required/>
+                     <label for="bancoRadio5">Santander</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio6" name="bancoRadio" type="radio" value="Outros" required/>
+                     <label for="bancoRadio6">Outros (especifique)</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio7" name="bancoRadio" type="radio" value="Outros" required/>
+                     <label for="bancoRadio7">NENHUM</label>
+                  </div>
+                  <div id="outrosbanco" style="display: none;">
+                     <input id="outrosInput" type="text" name="outrosInput" placeholder="Especifique" />
+                  </div>
+                  <p class="mt-3"><b>Nota:</b> Anotar "Nenhum" somente em último caso.</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção Banco -->
+               <!-- Seção checkbox imagens -->
+               <fieldset>
+                  <h1>Qual(is) a(s) coloração(ões) que usa atualmente?</h1>
+                  <h2>Questão tipo RM com imagens e com selecionador oculto</h2>
+                  <div class="checkboximagens d-flex flex-wrap gap-4">
+                     <div class="inputGroup col-12 col-md-2 col-lg-2">
+                        <input id="imgcheckbox1" name="imgCheckbox" type="checkbox" value="img1" required/>
+                        <label for="imgcheckbox1"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
+                     </div>
+                     <div class="inputGroup col-12 col-md-2 col-lg-2">
+                        <input id="imgcheckbox2" name="imgCheckbox" type="checkbox" value="img2" required/>
+                        <label for="imgcheckbox2"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
+                     </div>
+                     <div class="inputGroup col-12 col-md-2 col-lg-2">
+                        <input id="imgcheckbox3" name="imgCheckbox" type="checkbox" value="img3" required/>
+                        <label for="imgcheckbox3"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
+                     </div>
+                     <div class="inputGroup col-12 col-md-2 col-lg-2">
+                        <input id="imgcheckbox4" name="imgCheckbox" type="checkbox" value="img4" required/>
+                        <label for="imgcheckbox4"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
+                     </div>
+                     <div class="inputGroup col-12 col-md-2 col-lg-2">
+                        <input id="imgcheckbox5" name="imgCheckbox" type="checkbox" value="img5" required/>
+                        <label for="imgcheckbox5"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
+                     </div>
+                  </div>
+                  <p class="mt-3"><b>Nota:</b> Anotar todas as que se aplicam</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção checkbox imagens -->
+               <!-- Seção sugestão -->
+               <fieldset>
+                  <h1>Gostaria de dar alguma sugestão?</h1>
+                  <h2>Qualquer comentário é importante</h2>
+                  <div class="form-group">
+                     <label for="exampleFormControlTextarea1">Example textarea</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                   </div>
+                  <p class="mt-3"><b>Nota:</b> Favor usar barras duplas "//" para separar assunto(s) diferente(s)</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção sugestão -->
             </form>
             <!-- Formulário  -->
          </div>
