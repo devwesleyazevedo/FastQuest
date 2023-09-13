@@ -495,3 +495,39 @@ fieldset input.form-control{
  .checkboximagens .inputGroup label{
      padding: 5px;
 }
+
+
+
+/*TABELA*/
+.table th {
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.table select {
+    font-size: 13px;
+}
+
+.table img {
+    border-radius: 4px;
+}
+
+.table p {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+@media(max-width: 700px){
+    .table img {
+        max-width: 50px;
+    }
+    .table p {
+        display: none !important;
+    }
+    .table tbody th {
+       display: none !important;
+    }
+    .firstCO {
+        display: none !important;
+    }
+}

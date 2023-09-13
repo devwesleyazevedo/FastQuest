@@ -30,6 +30,9 @@
                   <li></li>
                   <li></li>
                   <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
                </ul>
                <!-- Seção progressbar -->
                <hr>
@@ -366,40 +369,317 @@
                </fieldset>
                <!-- Seção vários formatações -->
                <!-- Seção  Combo RU -->
-              <fieldset>
-               <h1>Dos produtos e serviços financeiros abaixo, por favor, indique qual o que mais utiliza?</h1>
-               <h2>Questão tipo Combo RU</h2>
-               <select class="form-select form-select-lg mb-3" aria-label="Escolha uma opção">
-                  <option value="" selected>Selecione uma opção</option>
-                  <option value="Conta corrente">Conta corrente</option>
-                  <option value="Cartão de crédito">Cartão de crédito</option>
-                  <option value="Cartão de débito">Cartão de débito</option>
-                  <option value="Crediário">Crediário</option>
-                  <option value="Programas de Recompensa ou Fidelidade de cartão de crédito (milhas/ pontos/ cashback)">Programas de Recompensa ou Fidelidade de cartão de crédito (milhas/ pontos/ cashback)</option>
-                  <option value="Conta em corretora/ Banco de investimento">Conta em corretora/ Banco de investimento</option>
-                  <option value="Criptomoedas">Criptomoedas</option>
-                  <option value="Empréstimo pessoal">Empréstimo pessoal</option>
-                  <option value="Empréstimo com garantia (imóvel, automóvel, investimentos etc)">Empréstimo com garantia (imóvel, automóvel, investimentos etc)</option>
-                  <option value="Crédito consignado">Crédito consignado</option>
-                  <option value="Antecipação/ empréstimo do saque aniversário - FGTS">Antecipação/ empréstimo do saque aniversário - FGTS</option>
-                  <option value="Financiamento imobiliário">Financiamento imobiliário</option>
-                  <option value="Financiamento de carro/ moto">Financiamento de carro/ moto</option>
-                  <option value="Seguro de vida">Seguro de vida</option>
-                  <option value="Seguro de celular">Seguro de celular</option>
-                  <option value="Seguro auto/ de carro">Seguro auto/ de carro</option>
-                  <option value="Seguro residencial">Seguro residencial</option>
-                  <option value="Loja dentro do app do banco (marketplace)">Loja dentro do app do banco (marketplace)</option>
-                  <option value="Portabilidade de salário">Portabilidade de salário</option>
-                  <option value="Assistente de pagamentos">Assistente de pagamentos</option>
-                  <option value="Conta PJ (pessoa jurídica)">Conta PJ (pessoa jurídica)</option>
-                  <option value="Conta global">Conta global</option>
-                  <option value="Cartão internacional">Cartão internacional</option>
-                </select>                   
-               <p class="mt-3"><b>Nota:</b> Escolha uma das opções.</p>
-               <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
-               <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               <fieldset>
+                  <h1>Dos produtos e serviços financeiros abaixo, por favor, indique qual o que mais utiliza?</h1>
+                  <h2>Questão tipo Combo RU</h2>
+                  <select class="form-select form-select-lg mb-3" aria-label="Escolha uma opção">
+                     <option value="" selected>Selecione uma opção</option>
+                     <option value="Conta corrente">Conta corrente</option>
+                     <option value="Cartão de crédito">Cartão de crédito</option>
+                     <option value="Cartão de débito">Cartão de débito</option>
+                     <option value="Crediário">Crediário</option>
+                     <option value="Programas de Recompensa ou Fidelidade de cartão de crédito (milhas/ pontos/ cashback)">Programas de Recompensa ou Fidelidade de cartão de crédito (milhas/ pontos/ cashback)</option>
+                     <option value="Conta em corretora/ Banco de investimento">Conta em corretora/ Banco de investimento</option>
+                     <option value="Criptomoedas">Criptomoedas</option>
+                     <option value="Empréstimo pessoal">Empréstimo pessoal</option>
+                     <option value="Empréstimo com garantia (imóvel, automóvel, investimentos etc)">Empréstimo com garantia (imóvel, automóvel, investimentos etc)</option>
+                     <option value="Crédito consignado">Crédito consignado</option>
+                     <option value="Antecipação/ empréstimo do saque aniversário - FGTS">Antecipação/ empréstimo do saque aniversário - FGTS</option>
+                     <option value="Financiamento imobiliário">Financiamento imobiliário</option>
+                     <option value="Financiamento de carro/ moto">Financiamento de carro/ moto</option>
+                     <option value="Seguro de vida">Seguro de vida</option>
+                     <option value="Seguro de celular">Seguro de celular</option>
+                     <option value="Seguro auto/ de carro">Seguro auto/ de carro</option>
+                     <option value="Seguro residencial">Seguro residencial</option>
+                     <option value="Loja dentro do app do banco (marketplace)">Loja dentro do app do banco (marketplace)</option>
+                     <option value="Portabilidade de salário">Portabilidade de salário</option>
+                     <option value="Assistente de pagamentos">Assistente de pagamentos</option>
+                     <option value="Conta PJ (pessoa jurídica)">Conta PJ (pessoa jurídica)</option>
+                     <option value="Conta global">Conta global</option>
+                     <option value="Cartão internacional">Cartão internacional</option>
+                  </select>
+                  <p class="mt-3"><b>Nota:</b> Escolha uma das opções.</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção  Combo RU -->
+               <!-- Seção Tabela bancos -->
+               <fieldset>
+                  <div class="table-responsive">
+                     <table class="table">
+                        <thead>
+                           <tr class="text-center">
+                              <th scope="col" class="firstCO"></th>
+                              <th scope="col">
+                                 <img clas="img-fluid rounded" width="70" src="./assets/img/banco-do-brasil.png" alt=""> 
+                                 <p class="d-block mt-2">Banco do Brasil</p>
+                              </th>
+                              <th scope="col">
+                                 <img clas="img-fluid rounded" width="70" src="./assets/img/bradesco.png" alt=""> 
+                                 <p class="d-block mt-2">Bradesco</p>
+                              </th>
+                              <th scope="col">
+                                 <img clas="img-fluid rounded" width="70" src="./assets/img/caixa-economica-federal.png" alt=""> 
+                                 <p class="d-block mt-2">Caixa</p>
+                              </th>
+                              <th scope="col">
+                                 <img clas="img-fluid rounded" width="70" src="./assets/img/itau.png" alt=""> 
+                                 <p class="d-block mt-2">Itaú</p>
+                              </th>
+                              <th scope="col">
+                                 <img clas="img-fluid rounded" width="70" src="./assets/img/santander-bank.jpg" alt=""> 
+                                 <p class="d-block mt-2">Santander</p>
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row" class="col-2 justify-content-center align-items-center">Aplicativo</th>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Aplicativo - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Aplicativo - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Aplicativo - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Aplicativo - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Aplicativo - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row" class="col-2">Caixas eletrônicos</th>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Caixas eletrônicos - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Caixas eletrônicos - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Caixas eletrônicos - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Caixas eletrônicos - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Caixas eletrônicos - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row" class="col-2">Agência</th>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Agência - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Agência - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Agência - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Agência - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Agência - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row" class="col-2">Site</th>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Site - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Site - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Site - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Site - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Site - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row" class="col-2">Gerente</th>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Gerente - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Gerente - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Gerente - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Gerente - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                              <td>
+                                 <select class="form-select" aria-label="Escolha uma opção">
+                                    <option value="" selected>Gerente - Selecione uma opção</option>
+                                    <option value="Muito insatisfeito">Muito insatisfeito</option>
+                                    <option value="Insatisfeito">Insatisfeito</option>
+                                    <option value="Satisfeito">Satisfeito</option>
+                                    <option value="Muito satisfeito">Muito satisfeito</option>
+                                 </select>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção Tabela bancos -->
             </form>
             <!-- Formulário  -->
          </div>
