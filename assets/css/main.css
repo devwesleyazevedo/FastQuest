@@ -18,6 +18,11 @@
     border-color: none;
     box-shadow: none;
 }
+.form-select:focus {
+    border-color: #ced4da; /* Cor da borda padrão do Bootstrap */
+    box-shadow: none; /* Sombra do foco padrão do Bootstrap */
+    outline: none; /* Remover a borda de destaque */
+}
  fieldset {
      min-width: 0;
      padding: 0;
