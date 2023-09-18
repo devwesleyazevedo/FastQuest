@@ -275,7 +275,7 @@
                   </div>
                   <div class="inputGroup">
                      <input id="bancoRadio7" name="bancoRadio" type="radio" value="Outros" required/>
-                     <label for="bancoRadio7">NENHUM</label>
+                     <label for="bancoRadio7">Nenhum</label>
                   </div>
                   <div id="outrosbanco" style="display: none;">
                      <input id="outrosInput" type="text" name="outrosInput" placeholder="Especifique" />
@@ -321,7 +321,6 @@
                   <h1>Gostaria de dar alguma sugestão?</h1>
                   <h2>Qualquer comentário é importante</h2>
                   <div class="form-group">
-                     <label for="exampleFormControlTextarea1">Example textarea</label>
                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                   <p class="mt-3"><b>Nota:</b> Favor usar barras duplas "//" para separar assunto(s) diferente(s)</p>
@@ -405,6 +404,8 @@
                <!-- Seção  Combo RU -->
                <!-- Seção Tabela bancos -->
                <fieldset>
+                  <h1>Qual sua satisfação com cada serviço dos bancos?</h1>
+                  <h2>Questão tipo Grid Matriz </h2>
                   <div class="table-responsive">
                      <table class="table">
                         <thead>
@@ -676,10 +677,501 @@
                         </tbody>
                      </table>
                   </div>
+                  <p class="mt-3"><b>Nota:</b> Escolha uma das opções.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Tabela bancos -->
+               <!-- Seção Cerveja -->
+               <fieldset>
+                  <h1>Quais suas marcas de cerveja preferidas (na ordem)?</h1>
+                  <h2>Coloque 1 na que mais gosta, 2 na segunda e assim em diante...</h2>
+                  <div class="inputGroup">
+                     <input id="cervejaCheckbox1" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="1" required/>
+                     <label for="cervejaCheckbox1"><span class="ordem"></span>Antarctica</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="cervejaCheckbox2" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="2" required/>
+                     <label for="cervejaCheckbox2"><span class="ordem"></span>Heineken </label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="cervejaCheckbox3" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="3" required/>
+                     <label for="cervejaCheckbox3"><span class="ordem"></span>Becks </label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="cervejaCheckbox4" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="4" required/>
+                     <label for="cervejaCheckbox4"><span class="ordem"></span>Budweiser </label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="cervejaCheckbox5" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="5" required/>
+                     <label for="cervejaCheckbox5"><span class="ordem"></span>Stella Artois </label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="cervejaCheckbox6" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="6" required/>
+                     <label for="cervejaCheckbox6"><span class="ordem"></span>Brahma </label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="cervejaCheckbox7" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="7" required/>
+                     <label for="cervejaCheckbox7"><span class="ordem"></span>Skol </label>
+                  </div>
+                  <div id="ordemEscolha"></div>
+                  <p class="mt-3"><b>Nota:</b> Favor marcar ao menos 3 cervejas.</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção Cerveja -->
+               <!-- Seção Somatória em Porcentagem -->
+               <fieldset>
+                  <h1>Divida seus gastos percentualmente:</h1>
+                  <h2>Questão tipo Somatória</h2>
+                  <div class="mb-3">
+                    <label for="padariaPorcentagem" class="form-label">Padaria (%)</label>
+                    <input type="number" class="form-control" id="padariaPorcentagem" min="0" max="100" step="1" oninput="calcularSomaPorcentagem()">
+                </div>
+                <div class="mb-3">
+                    <label for="mercadoPorcentagem" class="form-label">Mercado (%)</label>
+                    <input type="number" class="form-control" id="mercadoPorcentagem" min="0" max="100" step="1" oninput="calcularSomaPorcentagem()">
+                </div>
+                <div class="mb-3">
+                    <label for="postoPorcentagem" class="form-label">Posto de Gasolina (%)</label>
+                    <input type="number" class="form-control" id="postoPorcentagem" min="0" max="100" step="1" oninput="calcularSomaPorcentagem()">
+                </div>
+                <div class="mb-3">
+                    <label for="farmaciaPorcentagem" class="form-label">Farmácia (%)</label>
+                    <input type="number" class="form-control" id="farmaciaPorcentagem" min="0" max="100" step="1" oninput="calcularSomaPorcentagem()">
+                </div>
+                <div class="mb-3">
+                    <label for="outrosPorcentagem" class="form-label">Outros (%)</label>
+                    <input type="number" class="form-control" id="outrosPorcentagem" min="0" max="100" step="1" oninput="calcularSomaPorcentagem()">
+                </div>
+                <div class="mb-3">
+                    <label for="somaPorcentagem" class="form-label">Soma das Porcentagens (%)</label>
+                    <input type="text" class="form-control" id="somaPorcentagem" readonly>
+                </div>
+                  <p class="mt-3"><b>Nota:</b> A soma das porcentagens deve chegar a 100%.</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção Somatória em Porcentagem -->
+               <!-- Seção Somatória em Valor -->
+              <fieldset>
+               <h1>Divida seus gastos - em reais - do último final de semana:</h1>
+                <h2>Questão tipo Somatória - Com Flag de exibição compacta</h2>
+               <div class="mb-3">
+                 <label for="padariaMoeda" class="form-label">Padaria (R$)</label>
+                 <input type="number" class="form-control" id="padariaMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+             </div>
+             <div class="mb-3">
+                 <label for="mercadoMoeda" class="form-label">Mercado (R$)</label>
+                 <input type="number" class="form-control" id="mercadoMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+             </div>
+             <div class="mb-3">
+                 <label for="postoMoeda" class="form-label">Posto de Gasolina (R$)</label>
+                 <input type="number" class="form-control" id="postoMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+             </div>
+             <div class="mb-3">
+                 <label for="farmaciaMoeda" class="form-label">Farmácia (R$)</label>
+                 <input type="number" class="form-control" id="farmaciaMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+             </div>
+             <div class="mb-3">
+                 <label for="outrosMoeda" class="form-label">Outros (R$)</label>
+                 <input type="number" class="form-control" id="outrosMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+             </div>
+             <div class="mb-3">
+                 <label for="somaMoeda" class="form-label">Soma dos Gastos em Moeda (R$)</label>
+                 <input type="text" class="form-control" id="somaMoeda" readonly>
+             </div>
+             <p class="mt-3"><b>Nota:</b> Tente preencher todos os campos.</p>
+             <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+             <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+            </fieldset>
+            <!-- Seção Somatória em Valor -->
+            <!-- Seção Multiplos RU e RM -->
+            <fieldset>
+               <h1>Questão tipo Multiplos RU e RM</h1>
+               <h2>Questão tipo RU com outros (especifique)</h2>
+               <div class=" form-group mb-3">
+                   <label for="aplicativo">Aplicativo</label>
+                   <select class="form-select" id="aplicativo" name="aplicativo" required>
+                       <option value="" selected>Selecione uma opção</option>
+                       <option value="muito_insatisfeito">Muito insatisfeito</option>
+                       <option value="insatisfeito">Insatisfeito</option>
+                       <option value="indiferente">Indiferente</option>
+                       <option value="satisfeito">Satisfeito</option>
+                       <option value="muito_satisfeito">Muito satisfeito</option>
+                   </select>
+               </div>
+               <div class=" form-group mb-3">
+                   <label for="caixas_eletronicos">Caixas eletrônicos</label>
+                   <select class="form-select" id="caixas_eletronicos" name="caixas_eletronicos" required>
+                       <option value="" selected>Selecione uma opção</option>
+                       <option value="muito_insatisfeito">Muito insatisfeito</option>
+                       <option value="insatisfeito">Insatisfeito</option>
+                       <option value="indiferente">Indiferente</option>
+                       <option value="satisfeito">Satisfeito</option>
+                       <option value="muito_satisfeito">Muito satisfeito</option>
+                   </select>
+               </div>
+               <div class=" form-group mb-3">
+                   <label for="agencia">Agência</label>
+                   <select class="form-select" id="agencia" name="agencia" required>
+                       <option value="" selected>Selecione uma opção</option>
+                       <option value="muito_insatisfeito">Muito insatisfeito</option>
+                       <option value="insatisfeito">Insatisfeito</option>
+                       <option value="indiferente">Indiferente</option>
+                       <option value="satisfeito">Satisfeito</option>
+                       <option value="muito_satisfeito">Muito satisfeito</option>
+                   </select>
+               </div>
+               <div class=" form-group mb-3">
+                   <label for="site">Site</label>
+                   <select class="form-select" id="site" name="site" required>
+                       <option value="" selected>Selecione uma opção</option>
+                       <option value="muito_insatisfeito">Muito insatisfeito</option>
+                       <option value="insatisfeito">Insatisfeito</option>
+                       <option value="indiferente">Indiferente</option>
+                       <option value="satisfeito">Satisfeito</option>
+                       <option value="muito_satisfeito">Muito satisfeito</option>
+                   </select>
+               </div>
+               <div class=" form-group mb-3">
+                   <label for="gerente">Gerente</label>
+                   <select class="form-select" id="gerente" name="gerente" required>
+                       <option value="" selected>Selecione uma opção</option>
+                       <option value="muito_insatisfeito">Muito insatisfeito</option>
+                       <option value="insatisfeito">Insatisfeito</option>
+                       <option value="indiferente">Indiferente</option>
+                       <option value="satisfeito">Satisfeito</option>
+                       <option value="muito_satisfeito">Muito satisfeito</option>
+                   </select>
+               </div>
+               <p class="mt-3"><b>Nota:</b> Selecione uma opção para cada item.</p>
+               <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+               <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+           </fieldset>
+           <!-- Seção Multiplos RU e RM -->
+            <!-- Seção Multiplos RU e RM GRID -->
+            <fieldset>
+               <h1>Quais serviços utiliza em cada um dos bancos?</h1>
+               <h2>Questão tipo Multiplos RU e RM GRID</h2>
+               <table class="table">
+                   <thead>
+                       <tr>
+                           <th>Banco</th>
+                           <th>Aplicativo</th>
+                           <th>Caixas Eletrônicos</th>
+                           <th>Agência</th>
+                           <th>Site</th>
+                           <th>Gerente</th>
+                           <th>Outros (especifique):</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td>Banco do Brasil</td>
+                           <td><input type="checkbox" name="bb_aplicativo"></td>
+                           <td><input type="checkbox" name="bb_caixas_eletronicos"></td>
+                           <td><input type="checkbox" name="bb_agencia"></td>
+                           <td><input type="checkbox" name="bb_site"></td>
+                           <td><input type="checkbox" name="bb_gerente"></td>
+                           <td><input type="text" name="bb_outros"></td>
+                       </tr>
+                       <tr>
+                           <td>Bradesco</td>
+                           <td><input type="checkbox" name="bradesco_aplicativo"></td>
+                           <td><input type="checkbox" name="bradesco_caixas_eletronicos"></td>
+                           <td><input type="checkbox" name="bradesco_agencia"></td>
+                           <td><input type="checkbox" name="bradesco_site"></td>
+                           <td><input type="checkbox" name="bradesco_gerente"></td>
+                           <td><input type="text" name="bradesco_outros"></td>
+                       </tr>
+                       <tr>
+                           <td>Caixa Econômica Federal</td>
+                           <td><input type="checkbox" name="caixa_aplicativo"></td>
+                           <td><input type="checkbox" name="caixa_caixas_eletronicos"></td>
+                           <td><input type="checkbox" name="caixa_agencia"></td>
+                           <td><input type="checkbox" name="caixa_site"></td>
+                           <td><input type="checkbox" name="caixa_gerente"></td>
+                           <td><input type="text" name="caixa_outros"></td>
+                       </tr>
+                       <tr>
+                           <td>Itaú</td>
+                           <td><input type="checkbox" name="itau_aplicativo"></td>
+                           <td><input type="checkbox" name="itau_caixas_eletronicos"></td>
+                           <td><input type="checkbox" name="itau_agencia"></td>
+                           <td><input type="checkbox" name="itau_site"></td>
+                           <td><input type="checkbox" name="itau_gerente"></td>
+                           <td><input type="text" name="itau_outros"></td>
+                       </tr>
+                       <tr>
+                           <td>Santander</td>
+                           <td><input type="checkbox" name="santander_aplicativo"></td>
+                           <td><input type="checkbox" name="santander_caixas_eletronicos"></td>
+                           <td><input type="checkbox" name="santander_agencia"></td>
+                           <td><input type="checkbox" name="santander_site"></td>
+                           <td><input type="checkbox" name="santander_gerente"></td>
+                           <td><input type="text" name="santander_outros"></td>
+                       </tr>
+                   </tbody>
+               </table>
+               <p class="mt-3"><b>Nota:</b> Rolar a tela para ver o restante.</p>
+               <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+               <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+           </fieldset>
+           <!-- Seção Multiplos RU e RM GRID -->
+<!-- Seção  Multiplos RU e RM - Com flag trocar checkbox por opção -->
+            <fieldset>
+                <h1>Qual sua satisfação com cada serviço dos bancos?</h1>
+                <h2>Questão tipo Multiplos RU e RM - Com flag trocar checkbox por opção</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Banco</th>
+                            <th class="text-center">Muito insatisfeito</th>
+                            <th class="text-center">Insatisfeito</th>
+                            <th class="text-center">Indiferente</th>
+                            <th class="text-center">Satisfeito</th>
+                            <th class="text-center">Muito satisfeito</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                               <div class="mt-3 d-flex gap-2 align-items-center">
+                                    <img clas="img-fluid rounded" width="30" src="./assets/img/banco-do-brasil.png" alt="">
+                                    <p>Banco do Brasil</p>
+                               </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bb_mi" name="bb_avaliacao" type="radio" value="Muito insatisfeito" required/>
+                                    <label for="bb_mi">Muito insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bb_i" name="bb_avaliacao" type="radio" value="Insatisfeito" required/>
+                                    <label for="bb_i">Insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bb_ind" name="bb_avaliacao" type="radio" value="Indiferente" required/>
+                                    <label for="bb_ind">Indiferente</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bb_s" name="bb_avaliacao" type="radio" value="Satisfeito" required/>
+                                    <label for="bb_s">Satisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bb_ms" name="bb_avaliacao" type="radio" value="Muito satisfeito" required/>
+                                    <label for="bb_ms">Muito satisfeito</label>
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="mt-3 d-flex gap-2 align-items-center">
+                                    <img clas="img-fluid rounded" width="30" src="./assets/img/bradesco.png" alt="">
+                                    <p>Bradesco</p>
+                               </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bradesco_mi" name="bradesco_avaliacao" type="radio" value="Muito insatisfeito" required/>
+                                    <label for="bradesco_mi">Muito insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bradesco_i" name="bradesco_avaliacao" type="radio" value="Insatisfeito" required/>
+                                    <label for="bradesco_i">Insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bradesco_ind" name="bradesco_avaliacao" type="radio" value="Indiferente" required/>
+                                    <label for="bradesco_ind">Indiferente</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bradesco_s" name="bradesco_avaliacao" type="radio" value="Satisfeito" required/>
+                                    <label for="bradesco_s">Satisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="bradesco_ms" name="bradesco_avaliacao" type="radio" value="Muito satisfeito" required/>
+                                    <label for="bradesco_ms">Muito satisfeito</label>
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="mt-3 d-flex gap-2 align-items-center">
+                                    <img clas="img-fluid rounded" width="30" src="./assets/img/caixa-economica-federal.png" alt="">
+                                    <p>Caixa Econômica</p>
+                               </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="caixa_mi" name="caixa_avaliacao" type="radio" value="Muito insatisfeito" required/>
+                                    <label for="caixa_mi">Muito insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="caixa_i" name="caixa_avaliacao" type="radio" value="Insatisfeito" required/>
+                                    <label for="caixa_i">Insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="caixa_ind" name="caixa_avaliacao" type="radio" value="Indiferente" required/>
+                                    <label for="caixa_ind">Indiferente</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="caixa_s" name="caixa_avaliacao" type="radio" value="Satisfeito" required/>
+                                    <label for="caixa_s">Satisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="caixa_ms" name="caixa_avaliacao" type="radio" value="Muito satisfeito" required/>
+                                    <label for="caixa_ms">Muito satisfeito</label>
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="mt-3 d-flex gap-2 align-items-center">
+                                    <img clas="img-fluid rounded" width="30" src="./assets/img/itau.png" alt="">
+                                    <p>Itaú</p>
+                               </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="itau_mi" name="itau_avaliacao" type="radio" value="Muito insatisfeito" required/>
+                                    <label for="itau_mi">Muito insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="itau_i" name="itau_avaliacao" type="radio" value="Insatisfeito" required/>
+                                    <label for="itau_i">Insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="itau_ind" name="itau_avaliacao" type="radio" value="Indiferente" required/>
+                                    <label for="itau_ind">Indiferente</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="itau_s" name="itau_avaliacao" type="radio" value="Satisfeito" required/>
+                                    <label for="itau_s">Satisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="itau_ms" name="itau_avaliacao" type="radio" value="Muito satisfeito" required/>
+                                    <label for="itau_ms">Muito satisfeito</label>
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="mt-3 d-flex gap-2 align-items-center">
+                                    <img clas="img-fluid rounded" width="30" src="./assets/img/santander-bank.jpg" alt="">
+                                    <p>Santander</p>
+                               </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="santander_mi" name="santander_avaliacao" type="radio" value="Muito insatisfeito" required/>
+                                    <label for="santander_mi">Muito insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="santander_i" name="santander_avaliacao" type="radio" value="Insatisfeito" required/>
+                                    <label for="santander_i">Insatisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="santander_ind" name="santander_avaliacao" type="radio" value="Indiferente" required/>
+                                    <label for="santander_ind">Indiferente</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="santander_s" name="santander_avaliacao" type="radio" value="Satisfeito" required/>
+                                    <label for="santander_s">Satisfeito</label>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="inputGroup">
+                                    <input id="santander_ms" name="santander_avaliacao" type="radio" value="Muito satisfeito" required/>
+                                    <label for="santander_ms">Muito satisfeito</label>
+                                 </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="mt-3"><b>Nota:</b> Responder para todos.</p>
+                <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+            </fieldset>
+            <!-- Seção  Multiplos RU e RM - Com flag trocar checkbox por opção -->
+            <!-- Seção tipo Escala com EMOJI -->
+               <fieldset>
+                  <h1>Qual seu nível de satisfação com o produto?</h1>
+                  <h2>Questão tipo Escala com flag Escala de cores</h2>
+                  <div id="mainrange" class="mb-5 mt-5">
+                     <div class="text-center mb-3">
+                        <label class="text-center" for="range" style="color: #2c3e50;font-size: 18px;"><b>Nível de satisfação:</b> {{ val }}% - <label for="range" style="color: #00b0a9">
+                        <b>{{ getHappinessDescription }}</b>
+                        </label></label>
+                     </div>
+                     <div class="d-flex justify-content-center align-items-center gap-5 text-center">
+                        <div class="rangertext">Totalmente insatisfeito</div>
+                        <div id="slider">
+                           <input v-model.number="val" id="range" type="range" min=0 max=100>
+                           <div class="slider outer" aria-hidden="true">
+                              <label 
+                                 for="range"
+                                 :style="{ width: `${val}%`, borderRadius: greaterThanFifty, background: getSliderBackground }"
+                                 class="slider inner"
+                                 >
+                              </label>
+                              <span class="emoji" :style="{ transform: `translateX(${getPlacement})` }">
+                              {{ getHappiness }}
+                              </span>
+                           </div>
+                        </div>
+                        <div class="rangertext">Totalmente satisfeito</div>
+                     </div>
+                  </div>
+                  <p class="mt-3"><b>Nota:</b> Arraste até o nível desejado.</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção tipo Escala com EMOJI -->
+
+
+
+
+
+
             </form>
             <!-- Formulário  -->
          </div>

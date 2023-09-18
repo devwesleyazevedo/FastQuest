@@ -1,5 +1,6 @@
 
 // MENU DE PROGRESSO
+document.addEventListener("DOMContentLoaded", function() {
 var current_fs, next_fs, previous_fs; // fieldsets
 var animating; // flag to prevent quick multi-click glitches
 
@@ -40,7 +41,7 @@ $(".previous").click(function(){
 $(".submit").click(function(){
     return false;
 });
-
+});
 
 
 
@@ -82,10 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // MODAL DO FORM COM IMAGEM
-  // Get the modal
+document.addEventListener("DOMContentLoaded", function() {
   var modal = document.getElementById("modal-myModal");
-
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
   var img = document.getElementById("modal-myImg");
   var modalImg = document.getElementById("modal-img01");
   var captionText = document.getElementById("modal-caption");
@@ -94,21 +93,16 @@ document.addEventListener("DOMContentLoaded", function () {
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
   }
-
-  // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("modal-close")[0];
-
-  // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
     modal.style.display = "none";
   }
-
-  // Close the modal when the user clicks anywhere outside the modal content
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
+});
 
 
 
@@ -119,23 +113,131 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
+// CHECKBOX RANKING
+document.addEventListener("DOMContentLoaded", function() {
+const checkboxes = document.querySelectorAll('.cervejaCheckbox');
+const ordemEscolhaDiv = document.getElementById('ordemEscolha');
+let ordemEscolha = [];
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+checkboxes.forEach(function (checkbox, index) {
+    const ordemSpan = checkbox.parentElement.querySelector('.ordem');
+    ordemSpan.style.display = 'none'; // Defina inicialmente como "display: none".
 
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+    checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+            ordemEscolha.push(checkbox.value);
+            ordemSpan.textContent = ordemEscolha.length; // Define o número de ordem no <span>.
+            ordemSpan.style.display = 'flex'; // Altera o estilo para "display: flex" quando marcado.
+            atualizarOrdemEscolha();
+        } else {
+            const index = ordemEscolha.indexOf(checkbox.value);
+            if (index !== -1) {
+                ordemEscolha.splice(index, 1);
+                atualizarOrdemEscolha();
+            }
+            ordemSpan.style.display = 'none'; // Volta ao estilo "display: none" quando desmarcado.
         }
+        ordenarOpcoes(); // Ordena as opções com base na preferência.
+    });
+});
 
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
+function atualizarOrdemEscolha() {
+    ordemEscolhaDiv.innerHTML = "Ordem de Escolha: " + ordemEscolha.join(", ");
+}
+
+function ordenarOpcoes() {
+    checkboxes.forEach(function (checkbox) {
+        const ordemSpan = checkbox.parentElement.querySelector('.ordem');
+        const checkboxValue = checkbox.value;
+        const index = ordemEscolha.indexOf(checkboxValue);
+        if (index !== -1) {
+            ordemSpan.textContent = index + 1; // Define o número de ordem com base na preferência atual.
+        }
+    });
+}
+});
+  
+
+
+
+
+
+
+
+
+// SOMATÓRIA PORCENTAGEM %
+function calcularSomaPorcentagem() {
+  const padaria = parseFloat(document.getElementById('padariaPorcentagem').value) || 0;
+  const mercado = parseFloat(document.getElementById('mercadoPorcentagem').value) || 0;
+  const posto = parseFloat(document.getElementById('postoPorcentagem').value) || 0;
+  const farmacia = parseFloat(document.getElementById('farmaciaPorcentagem').value) || 0;
+  const outros = parseFloat(document.getElementById('outrosPorcentagem').value) || 0;
+
+  const soma = padaria + mercado + posto + farmacia + outros;
+  document.getElementById('somaPorcentagem').value = soma + '%';
+}
+
+// SOMATÓRIA MOEDA R$
+function calcularSomaMoeda() {
+  const padaria = parseFloat(document.getElementById('padariaMoeda').value) || 0;
+  const mercado = parseFloat(document.getElementById('mercadoMoeda').value) || 0;
+  const posto = parseFloat(document.getElementById('postoMoeda').value) || 0;
+  const farmacia = parseFloat(document.getElementById('farmaciaMoeda').value) || 0;
+  const outros = parseFloat(document.getElementById('outrosMoeda').value) || 0;
+  const soma = padaria + mercado + posto + farmacia + outros;
+  document.getElementById('somaMoeda').value = 'R$ ' + soma.toFixed(2);
+}
+
+
+
+
+
+
+
+
+
+
+// RANGE FUNÇÃO
+const slider = new Vue ({
+  el: '#mainrange',
+  data: () => ({
+  val: 70
+  }),
+  mounted() {
+  this.val = Math.floor(Math.random() * 101)
+  },
+  computed: {
+  getPlacement() {
+  return ((this.val * 14.5)) + `%`;
+  },
+  greaterThanFifty() {
+  return this.val > 50 ? `var(--roundness)` : `0`;
+  },
+  getHappinessColor() {
+  return `rgba(255, ${106 + (103 / 100 * this.val)}, ${(Math.floor(this.val * -1 / 7.692)) + 13}`;
+  },
+  getSliderBackground() {
+  return `linear-gradient(to right, var(--orange), ${(this.val * -1) + 125}%, var(--yellow))`
+  },
+  getHappiness() {
+  let moods = ["😡","😠","😦","☹️","🙁","😐","🙂","😊","😄","😃","😍"]
+  if (this.val === 0) {
+  return "🤬";
+  } 
+  return moods[(Math.floor(this.val / 10))];
+  },
+  getHappinessDescription() {
+  if (this.val <= 20) {
+  return "Totalmente Insatisfeito";
+  } else if (this.val <= 40) {
+  return "Insatisfeito";
+  } else if (this.val <= 60) {
+  return "Neutro";
+  } else if (this.val <= 80) {
+  return "Satisfeito";
+  } else {
+  return "Totalmente Satisfeito";
+  }
+  }
+  }
+  });

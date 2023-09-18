@@ -1,5 +1,13 @@
 /*DEFAULT*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+:root {
+    --yellow: #ffd100;
+    --orange: #ff6a13;
+    --darkGray: #53565a;
+    --midGray: #888b8d;
+    --white: #fff;
+    --roundness: 1.25em;
+    }
  * {
      margin: 0;
      padding: 0;
@@ -219,7 +227,7 @@
 }
 /*INPUT RADIO*/
  .inputGroup {
-     background-color: #fff;
+     background-color: transparent;
      display: block;
      margin: 10px 0;
      position: relative;
@@ -315,29 +323,9 @@ fieldset input.form-control{
      border-bottom: 1px solid #EFF0F6;
      padding-bottom: 10px;
      margin-bottom: 20px;
+     width: 100%;
+     margin-top: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*GRAU DE CONCORDÂNCIA 0 a 5*/
  .escala0a5 {
      gap: 4px;
@@ -495,9 +483,6 @@ fieldset input.form-control{
  .checkboximagens .inputGroup label{
      padding: 5px;
 }
-
-
-
 /*TABELA*/
 .table th {
     font-size: 14px;
@@ -517,6 +502,15 @@ fieldset input.form-control{
     font-size: 14px;
     margin-bottom: 0;
 }
+.table .inputGroup label:after {
+    display: none;
+}
+.table .inputGroup label {
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
 @media(max-width: 700px){
     .table img {
         max-width: 50px;
@@ -531,3 +525,98 @@ fieldset input.form-control{
         display: none !important;
     }
 }
+/*CHECKBOX RANKING*/
+.ordem {
+    width: 32px;
+    height: 32px;
+    content: "";
+    border: 2px solid #54E0C7;
+    border-radius: 50%;
+    z-index: 222;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #54E0C7;
+    color: #fff;
+}
+#ordemEscolha {
+    display: none;
+}
+
+
+
+/*RANGE SLIDER*/
+#slider {
+    display: grid;
+    justify-content: stretch;
+    width: 100%;
+    max-width: 37.5em;
+    }
+    #slider input {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    height: calc(var(--roundness) * 2);
+    cursor: pointer;
+    }
+    #slider input:focus + .outer {
+    box-shadow: 0 0 0 0.1em var(--white), 0 0 0 0.2em var(--orange);
+    }
+    #slider input:focus + .outer .emoji {
+    }
+    #slider > label {
+    width: 100%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0 0 0.5em;
+    }
+    #slider .outer {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    border-radius: var(--roundness);
+    margin: auto;
+    height: calc(var(--roundness) - 0em);
+    background: var(--midGray);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    }
+    #slider label.inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    border-top-left-radius: var(--roundness) !important;
+    border-bottom-left-radius: var(--roundness) !important;
+    position: absolute;
+    transition: all 0.15s cubic-bezier(0.5, 0.4, 0.2, 1);
+    transform-origin: left;
+    }
+    #slider .emoji {
+    margin-left: -0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    transition: all 0.15s cubic-bezier(0.5, 0.4, 0.2, 1);
+    border-radius: var(--roundness);
+    text-align: right;
+    font-size: calc(var(--roundness) * 2);
+    line-height: 1.1;
+    }
+    #mainrange .rangertext {
+       font-size: 13px;
+       font-weight: 600;
+       line-height: 15px;
+    }
