@@ -17,31 +17,11 @@
                <img class="logo d-flex mx-auto mb-5" src="./assets/img/logo.png" alt="">
                <!-- Logo -->
                <!-- Seção progressbar -->
-               <ul id="progressbar" >
-                  <li class="active"></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-               </ul>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <span class="progress-text">0%</span>
+                  </div>
+              </div>
                <!-- Seção progressbar -->
                <hr>
                <br>
@@ -61,20 +41,20 @@
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                </fieldset>
                <!-- Seção apresentação  -->
-               <!-- Seção vídeo  -->
-               <fieldset>
+                <!-- Seção vídeo  -->
+                <fieldset>
                   <h1>Veja o vídeo abaixo para responder as seguintes perguntas</h1>
                   <h2>Questão tipo apresentação com vídeo</h2>
-                  <div class="embed-responsive embed-responsive-16by9">
-                     <video controls class="w-100 hover-to-play embed-responsive-item rounded"  loop>
-                        <source src="https://download.fastquest.net:7575/admin/Uploads/Midias/Controles_FastQuest/2308090348366557253245.mp4" type="video/mp4">
-                     </video>
-                  </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                   <video id="videoskinjs" class="vjs-matrix video-js embed-responsive-item" controls preload="auto" width="902" height="509">
+                      <source src="https://download.fastquest.net:7575/admin/Uploads/Midias/Controles_FastQuest/2308090348366557253245.mp4" type="video/mp4">
+                  </video>
+                </div>
                   <p class="mt-3"><b>Nota:</b> Caso o entrevistado pergunte, a entrevista levará 15 minutos.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
-               </fieldset>
-               <!-- Seção vídeo  -->
+              </fieldset>
+              <!-- Seção vídeo  -->
                <!-- Seção imagem modal -->
                <fieldset>
                   <h1>Veja a imagem abaixo para responder as seguintes perguntas</h1>

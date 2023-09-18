@@ -1,47 +1,52 @@
 
 // MENU DE PROGRESSO
 document.addEventListener("DOMContentLoaded", function() {
-var current_fs, next_fs, previous_fs; // fieldsets
-var animating; // flag to prevent quick multi-click glitches
+  var current_fs, next_fs, previous_fs; // fieldsets
+  var animating; // flag to prevent quick multi-click glitches
+  var step = 0; // passo atual
+  var totalSteps = $("fieldset").length;
 
-$(".next").click(function(){
-    if (animating) return false;
-    animating = true;
-    
-    current_fs = $(this).parent();
-    next_fs = $(this).parent().next();
-    
-    // activate next step on progressbar using the index of next_fs
-    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-    
-    // hide the current fieldset with fade
-    current_fs.fadeOut(400, function(){
-        next_fs.fadeIn(400);
-        animating = false;
-    });
+  $(".next").click(function() {
+      if (animating || step >= totalSteps - 1) return false;
+      animating = true;
+
+      current_fs = $(this).parent();
+      next_fs = $(this).parent().next();
+
+      // Atualize a barra de progresso com a porcentagem
+      step++;
+      var percent = ((step / totalSteps) * 100).toFixed(2); // Limita a 2 casas decimais
+      $(".progress-bar").css("width", percent + "%");
+      $(".progress-text").text(percent + "%");
+
+      current_fs.fadeOut(400, function() {
+          next_fs.fadeIn(400);
+          animating = false;
+      });
+  });
+
+  $(".previous").click(function() {
+      if (animating || step <= 0) return false;
+      animating = true;
+
+      current_fs = $(this).parent();
+      previous_fs = $(this).parent().prev();
+
+      // Atualize a barra de progresso com a porcentagem
+      step--;
+      var percent = ((step / totalSteps) * 100).toFixed(2); // Limita a 2 casas decimais
+      $(".progress-bar").css("width", percent + "%");
+      $(".progress-text").text(percent + "%");
+
+      current_fs.fadeOut(400, function() {
+          previous_fs.fadeIn(400);
+          animating = false;
+      });
+  });
 });
 
-$(".previous").click(function(){
-    if (animating) return false;
-    animating = true;
-    
-    current_fs = $(this).parent();
-    previous_fs = $(this).parent().prev();
-    
-    // de-activate current step on progressbar
-    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-    
-    // hide the current fieldset with fade
-    current_fs.fadeOut(400, function(){
-        previous_fs.fadeIn(400);
-        animating = false;
-    });
-});
 
-$(".submit").click(function(){
-    return false;
-});
-});
+
 
 
 
@@ -242,5 +247,14 @@ const slider = new Vue ({
   }
   });
 
+
+
+
+
+
+
+
 // VIDEO JS
-  var player = videojs('video');
+document.addEventListener("DOMContentLoaded", function() {
+  var player = videojs('videoskinjs');
+});
