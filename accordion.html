@@ -10,79 +10,219 @@
    </head>
    <body>
       <div class="container">
-         <div class="row justify-content-center align-items-center  min-vh-100">
+         <div class="row justify-content-center align-items-center min-vh-100">
             <!-- Formulário  -->
             <form id="idform" class="p-3 p-md-4 p-lg-5 rounded">
                <!-- Logo -->
                <img class="logo d-flex mx-auto mb-5" src="./assets/img/logo.png" alt="">
-               <!-- Seção tipo Escala com EMOJI -->
+               <!-- Seção nível de conhecimento dos esportes -->
                <fieldset>
                   <h1>Qual seu nível de conhecimento sobre cada um dos esportes?</h1>
-                  <h2>Questão tipo Accordion</h2>
-                  
-
-
-
-
-
-
-
-
-
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Accordion Item #1
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Accordion Item #2
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Accordion Item #3
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  <p class="mt-3"><b>Nota:</b> Clique no esporte para expandir e marque todos</p>
+                  <h2>Questão tipo Radio</h2>
+                  <table class="table">
+                     <thead>
+                        <tr>
+                           <th>Esporte</th>
+                           <th class="text-center">Nenhum conhecimento</th>
+                           <th class="text-center">Pouco conhecimento</th>
+                           <th class="text-center">Básico </th>
+                           <th class="text-center">Intermediário</th>
+                           <th class="text-center">Avançado</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <div class="mt-3 d-flex gap-2 align-items-center">
+                                 <p>Futebol</p>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bb_mi" name="bb_avaliacao" type="radio" value="Nenhum conhecimento" required/>
+                                 <label for="bb_mi">Nenhum conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bb_i" name="bb_avaliacao" type="radio" value="Pouco conhecimento" required/>
+                                 <label for="bb_i">Pouco conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bb_ind" name="bb_avaliacao" type="radio" value="Básico " required/>
+                                 <label for="bb_ind">Básico </label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bb_s" name="bb_avaliacao" type="radio" value="Intermediário" required/>
+                                 <label for="bb_s">Intermediário</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bb_ms" name="bb_avaliacao" type="radio" value="Avançado" required/>
+                                 <label for="bb_ms">Avançado</label>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="mt-3 d-flex gap-2 align-items-center">
+                                 <p>Basquete</p>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bradesco_mi" name="bradesco_avaliacao" type="radio" value="Nenhum conhecimento" required/>
+                                 <label for="bradesco_mi">Nenhum conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bradesco_i" name="bradesco_avaliacao" type="radio" value="Pouco conhecimento" required/>
+                                 <label for="bradesco_i">Pouco conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bradesco_ind" name="bradesco_avaliacao" type="radio" value="Básico " required/>
+                                 <label for="bradesco_ind">Básico </label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bradesco_s" name="bradesco_avaliacao" type="radio" value="Intermediário" required/>
+                                 <label for="bradesco_s">Intermediário</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="bradesco_ms" name="bradesco_avaliacao" type="radio" value="Avançado" required/>
+                                 <label for="bradesco_ms">Avançado</label>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="mt-3 d-flex gap-2 align-items-center">
+                                 <p>Vôlei</p>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="caixa_mi" name="caixa_avaliacao" type="radio" value="Nenhum conhecimento" required/>
+                                 <label for="caixa_mi">Nenhum conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="caixa_i" name="caixa_avaliacao" type="radio" value="Pouco conhecimento" required/>
+                                 <label for="caixa_i">Pouco conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="caixa_ind" name="caixa_avaliacao" type="radio" value="Básico " required/>
+                                 <label for="caixa_ind">Básico </label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="caixa_s" name="caixa_avaliacao" type="radio" value="Intermediário" required/>
+                                 <label for="caixa_s">Intermediário</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="caixa_ms" name="caixa_avaliacao" type="radio" value="Avançado" required/>
+                                 <label for="caixa_ms">Avançado</label>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="mt-3 d-flex gap-2 align-items-center">
+                                 <p>Surf</p>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="surf_mi" name="surf_avaliacao" type="radio" value="Nenhum conhecimento" required/>
+                                 <label for="surf_mi">Nenhum conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="surf_i" name="surf_avaliacao" type="radio" value="Pouco conhecimento" required/>
+                                 <label for="surf_i">Pouco conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="surf_ind" name="surf_avaliacao" type="radio" value="Básico " required/>
+                                 <label for="surf_ind">Básico </label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="surf_s" name="surf_avaliacao" type="radio" value="Intermediário" required/>
+                                 <label for="surf_s">Intermediário</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="surf_ms" name="surf_avaliacao" type="radio" value="Avançado" required/>
+                                 <label for="surf_ms">Avançado</label>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="mt-3 d-flex gap-2 align-items-center">
+                                 <p>Skate</p>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="skate_mi" name="skate_avaliacao" type="radio" value="Nenhum conhecimento" required/>
+                                 <label for="skate_mi">Nenhum conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="skate_i" name="skate_avaliacao" type="radio" value="Pouco conhecimento" required/>
+                                 <label for="skate_i">Pouco conhecimento</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="skate_ind" name="skate_avaliacao" type="radio" value="Básico" required/>
+                                 <label for="skate_ind">Básico</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="skate_s" name="skate_avaliacao" type="radio" value="Intermediário" required/>
+                                 <label for="skate_s">Intermediário</label>
+                              </div>
+                           </td>
+                           <td>
+                              <div class="inputGroup">
+                                 <input id="skate_ms" name="skate_avaliacao" type="radio" value="Avançado" required/>
+                                 <label for="skate_ms">Avançado</label>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <p class="mt-3"><b>Nota:</b> Marque todos.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
-               <!-- Seção tipo Escala com EMOJI -->
+               <!-- Seção nível de conhecimento dos esportes -->
             </form>
             <!-- Formulário  -->
          </div>
