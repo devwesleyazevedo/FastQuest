@@ -241,3 +241,6 @@ const slider = new Vue ({
   }
   }
   });
+
+// VIDEO JS
+  var player = videojs('video');
