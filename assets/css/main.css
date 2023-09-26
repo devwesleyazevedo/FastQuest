@@ -658,4 +658,28 @@
      font-weight: 600;
      line-height: 15px;
 }
+
+ /* Estilos CSS para o emoji e o slider */
+ .emoji {
+    font-size: 24px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .slider-container {
+    max-width: 90vw; /* Defina a largura máxima desejada em relação à largura da tela (90% neste exemplo) */
+  }
  
+
+@media(max-width: 700px){
+    #mainrange .rangertext {
+       display: none;
+   }
+   #slider .emoji {
+    transform: none;
+    }
+    #mainrange label {
+        display: block;
+        width: 100%;;
+    }
+}

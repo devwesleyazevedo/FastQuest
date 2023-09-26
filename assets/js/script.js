@@ -169,18 +169,35 @@ function calcularSomaMoeda() {
 
 
 // RANGE FUNÇÃO
-const slider = new Vue ({
+const slider = new Vue({
   el: '#mainrange',
   data: () => ({
-  val: 70
+    val: 70,
+    isMobile: false // Adicione esta variável para verificar se o dispositivo é móvel
   }),
   mounted() {
-  this.val = Math.floor(Math.random() * 101)
+    this.val = Math.floor(Math.random() * 101);
+    // Verifique a largura da janela ao carregar a página
+    this.checkIfMobile();
+
+    // Adicione um ouvinte de redimensionamento para verificar se a largura da janela muda
+    window.addEventListener('resize', this.checkIfMobile);
+  },
+  beforeDestroy() {
+    // Remova o ouvinte de redimensionamento ao destruir o componente
+    window.removeEventListener('resize', this.checkIfMobile);
+  },
+  methods: {
+    checkIfMobile() {
+      // Verifique se a largura da janela é menor ou igual a 700px
+      this.isMobile = window.innerWidth <= 700;
+    }
   },
   computed: {
-  getPlacement() {
-  return ((this.val * 14.5)) + `%`;
-  },
+    getPlacement() {
+      // Use a lógica para definir o valor com base no dispositivo móvel ou não
+      return this.isMobile ? ((this.val * 8)) + `%` : ((this.val * 14.5)) + `%`;
+    },
   greaterThanFifty() {
   return this.val > 50 ? `var(--roundness)` : `0`;
   },
