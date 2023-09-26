@@ -456,8 +456,34 @@
 }
 /*CHECKBOX IMAGENS*/
  .checkboximagens .inputGroup label{
-     padding: 5px;
+     padding: 0px;
 }
+
+.checkboximagens .inputGroup label {
+    max-height: 260px;
+}
+.checkboximagens .inputGroup img {
+    width: 100%;
+}
+.checkboximagens .inputGroup small {
+    font-size: 18px;
+   }
+
+@media(max-width: 700px){
+    .checkboximagens {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+   }
+   .checkboximagens .inputGroup label {
+        max-height: 277px;
+   }
+   .checkboximagens .inputGroup small {
+    font-size: 18px;
+   }
+}
+
+
+
 /*SELECT*/
  select.form-select {
      padding: 15px;
