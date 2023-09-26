@@ -18,38 +18,42 @@
                <!-- Logo -->
                <!-- Seção Cerveja -->
                <fieldset>
-                  <h1>Quais suas marcas de cerveja preferidas (na ordem)?</h1>
-                  <h2>Coloque 1 na que mais gosta, 2 na segunda e assim em diante...</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Ranking (rodiziado)</h1>
+                     <h2>Quais suas marcas de cerveja preferidas (na ordem)?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Coloque 1 na que mais gosta, 2 na segunda e assim em diante...</p>
+                  </div>
                   <div class="inputGroup">
                      <input id="cervejaCheckbox1" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="1" required/>
-                     <label for="cervejaCheckbox1"><span class="ordem"></span>Skol</label>
+                     <label for="cervejaCheckbox1"><span class="ordem"></span>Antarctica</label>
                   </div>
                   <div class="inputGroup">
                      <input id="cervejaCheckbox2" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="2" required/>
-                     <label for="cervejaCheckbox2"><span class="ordem"></span>Budweiser</label>
+                     <label for="cervejaCheckbox2"><span class="ordem"></span>Heineken </label>
                   </div>
                   <div class="inputGroup">
                      <input id="cervejaCheckbox3" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="3" required/>
-                     <label for="cervejaCheckbox3"><span class="ordem"></span>Brahma</label>
+                     <label for="cervejaCheckbox3"><span class="ordem"></span>Becks </label>
                   </div>
                   <div class="inputGroup">
                      <input id="cervejaCheckbox4" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="4" required/>
-                     <label for="cervejaCheckbox4"><span class="ordem"></span>Heineken</label>
+                     <label for="cervejaCheckbox4"><span class="ordem"></span>Budweiser </label>
                   </div>
                   <div class="inputGroup">
                      <input id="cervejaCheckbox5" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="5" required/>
-                     <label for="cervejaCheckbox5"><span class="ordem"></span>Stella Artois</label>
+                     <label for="cervejaCheckbox5"><span class="ordem"></span>Stella Artois </label>
                   </div>
                   <div class="inputGroup">
                      <input id="cervejaCheckbox6" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="6" required/>
-                     <label for="cervejaCheckbox6"><span class="ordem"></span>Becks</label>
+                     <label for="cervejaCheckbox6"><span class="ordem"></span>Brahma </label>
                   </div>
                   <div class="inputGroup">
                      <input id="cervejaCheckbox7" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="7" required/>
-                     <label for="cervejaCheckbox7"><span class="ordem"></span>Antarctica</label>
+                     <label for="cervejaCheckbox7"><span class="ordem"></span>Skol </label>
                   </div>
                   <div id="ordemEscolha"></div>
-                  <p class="mt-3"><b>Nota:</b> Anotar "Nenhum" somente em último caso.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Favor marcar ao menos 3 cervejas.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>

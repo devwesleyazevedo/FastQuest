@@ -17,18 +17,20 @@
                <img class="logo d-flex mx-auto mb-5" src="./assets/img/logo.png" alt="">
                <!-- Logo -->
                <!-- Seção progressbar -->
-               <div class="progress">
+               <div class="progress mb-5">
                   <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                      <span class="progress-text">0%</span>
                   </div>
                </div>
                <!-- Seção progressbar -->
-               <hr>
-               <br>
                <!-- Seção apresentação  -->
                <fieldset>
-                  <h1>Estamos realizando uma pesquisa sobre relacionamento com instituições financeiras e gostaríamos de ouvir a sua opinião. Você poderia participar?</h1>
-                  <h2>Confirme se é a pessoa responsável pelo relacionamento com instituições financeiras</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo apresentação</h1>
+                     <h2>Estamos realizando uma pesquisa sobre relacionamento com instituições financeiras e gostaríamos de ouvir a sua opinião. Você poderia participar?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Confirme se é a pessoa responsável pelo relacionamento com instituições financeiras</p>
+                  </div>
                   <div class="inputGroup">
                      <input id="s01_id01" name="concordanciaRadio" type="radio" value="Sim" required/>
                      <label for="s01_id01">Sim</label>
@@ -37,42 +39,54 @@
                      <input id="s01_id02" name="concordanciaRadio" type="radio" value="Não" required/>
                      <label for="s01_id02">Não</label>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Caso o entrevistado pergunte, a entrevista levará 15 minutos.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Caso o entrevistado pergunte, a entrevista levará 15 minutos.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                </fieldset>
                <!-- Seção apresentação  -->
                <!-- Seção vídeo  -->
                <fieldset>
-                  <h1>Veja o vídeo abaixo para responder as seguintes perguntas</h1>
-                  <h2>Questão tipo apresentação com vídeo</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo apresentação</h1>
+                     <h2>Estamos realizando uma pesquisa sobre relacionamento com instituições financeiras e gostaríamos de ouvir a sua opinião. Você poderia participar?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Confirme se é a pessoa responsável pelo relacionamento com instituições financeiras</p>
+                  </div>
                   <div class="embed-responsive embed-responsive-16by9">
                      <video id="videoskinjs" class="vjs-matrix video-js embed-responsive-item" controls preload="auto" width="902" height="509">
                         <source src="https://download.fastquest.net:7575/admin/Uploads/Midias/Controles_FastQuest/2308090348366557253245.mp4" type="video/mp4">
                      </video>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Caso o entrevistado pergunte, a entrevista levará 15 minutos.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Caso o entrevistado pergunte, a entrevista levará 15 minutos.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção vídeo  -->
                <!-- Seção imagem modal -->
                <fieldset>
-                  <h1>Veja a imagem abaixo para responder as seguintes perguntas</h1>
-                  <h2>Questão tipo apresentação com imagem e zoom ao passar o mouse</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo apresentação com imagem e zoom ao passar o mouse</h1>
+                     <h2>Veja a imagem abaixo para responder as seguintes perguntas</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Confirme se é a pessoa responsável pelo relacionamento com instituições financeiras</p>
+                  </div>
                   <img id="modal-myImg" class="img-fluid" src="https://download.fastquest.net:7575/admin/Uploads/Midias/Controles_FastQuest/2308090404554938483245.png" alt="" >
                   <div id="modal-myModal" class="modal">
                      <span class="modal-close">&times;</span>
                      <img class="modal-content" id="modal-img01">
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Você pode clicar na imagem para dar zoom, se achar necessário.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Você pode clicar na imagem para dar zoom, se achar necessário.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção imagem modal -->
-               <!-- Seção Estado UF -->
-               <fieldset>
-                  <h1>Estado - Anote a UF</h1>
-                  <h2>Questão tipo RU com outros (especifique)</h2>
+                <!-- Seção Estado UF -->
+                <fieldset>
+                  <div class="mb-3">
+                     <h1>Questão tipo RU com outros (especifique)</h1>
+                     <h2>Estado</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Anote a UF</p>
+                  </div>
                   <div class="inputGroup">
                      <input id="estadoRadio1" name="estadoRadio" type="radio" value="SP" required/>
                      <label for="estadoRadio1">1. SP</label>
@@ -86,21 +100,44 @@
                      <label for="estadoRadio3">3. MG</label>
                   </div>
                   <div class="inputGroup">
-                     <input id="estadoRadio4" name="estadoRadio" type="radio" value="Outros" required/>
-                     <label for="estadoRadio4">4. Outro</label>
+                     <div class="d-flex gap-3">
+                        <div class="w-100 testa">
+                           <input id="estadoRadio4" name="estadoRadio" type="radio" value="Outros" required/>
+                           <label for="estadoRadio4">4. Outros (especifique)</label>
+                        </div>
+                        <div class="outro w-100 d-flex align-items-center justify-content-end gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                           <input type="text" name="estadooutro" placeholder="Especifique" />
+                        </div>
+                     </div>
                   </div>
-                  <div id="outroestado" style="display: none;">
-                     <input id="outrosInput" type="text" name="outrosInput" placeholder="Especifique" />
-                  </div>
-                  <p class="mt-3"><b>Nota:</b> Caso opte por selecionar a opção "Outro", será necessário inserir o estado (UF) correspondente.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Caso opte por selecionar a opção "Outro", será necessário inserir o estado (UF) correspondente.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Estado UF -->
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção grau de concordância 1 a 5 -->
                <fieldset>
-                  <h1>Grau de concordância</h1>
-                  <h2 >Questão tipo RU escala de concordância (1 a 5)</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo RU escala de concordância (1 a 5)</h1>
+                     <h2>Grau de concordância</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Anote as notas de 1 a 5</p>
+                  </div>
                   <div class="escala0a5 d-flex flex-wrap justify-content-between align-items-center">
                      <div class="inputGroup">
                         <input id="escala0a501" name="concordanciaRadio" type="radio" value="Discordo totalmente" required/>
@@ -123,15 +160,32 @@
                         <label for="escala0a505" class="d-flex justify-content-center align-items-center">Concordo totalmente</label>
                      </div>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Por favor, avalie as afirmações atribuindo uma nota de 1 a 5 de acordo com o seu grau de concordância.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Por favor, avalie as afirmações atribuindo uma nota de 1 a 5 de acordo com o seu grau de concordância.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção grau de concordância 1 a 5 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção grau de concordância 0 a 10 -->
                <fieldset>
-                  <h1>Grau de concordância</h1>
-                  <h2>Questão tipo RU termômetro (0 a 10)</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo RU termômetro (0 a 10)</h1>
+                     <h2>Grau de concordância</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Anote as notas de 1 a 10</p>
+                  </div>
                   <div class="navegacaosatisfation d-flex justify-content-between align-items-center">
                      <span class="not">Não recomendaria</span>
                      <span class="yes">Recomendaria, com certeza</span>
@@ -182,15 +236,32 @@
                         <label for="escala0a10011">10</label>
                      </div>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Qual número melhor representa sua concordância.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Qual número melhor representa sua concordância.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção grau de concordância 0 a 10 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção grau de satisfação com estrelas-->
                <fieldset>
-                  <h1>Grau de satisfação</h1>
-                  <h2>Questão tipo RU escala de satisfação - com estrelas</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo RU escala de satisfação - com estrelas</h1>
+                     <h2>Grau de satisfação</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Clique na estrela de 1 a 5</p>
+                  </div>
                   <div class="rating d-flex justify-content-between gap-4 align-items-center">
                      <div class="inputGroupStar">
                         <div class="mx-auto d-flex justify-content-center align-items-center">
@@ -228,15 +299,31 @@
                         <span>Péssimo</span>
                      </div>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> As estrelas se acendem conforme a passagem do ponteiro do mouse.</p>
+                  <p class="mt-3"><b>Rodapé:</b> As estrelas se acendem conforme a passagem do ponteiro do mouse.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção grau de satisfação com estrelas-->
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção Banco -->
                <fieldset>
-                  <h1>Em quais bancos você tem conta corrente?</h1>
-                  <h2>Questão tipo RM - com outros (especifique) e código exclusivo (nenhum)</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo RM - com outros (especifique) e código exclusivo (nenhum)</h1>
+                     <h2>Em quais bancos você tem conta corrente?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Anotar todos os que se aplicam</p>
+                  </div>
                   <div class="inputGroup">
                      <input id="bancoRadio1" name="bancoRadio" type="radio" value="SP" required/>
                      <label for="bancoRadio1">Banco do Brasil</label>
@@ -258,25 +345,48 @@
                      <label for="bancoRadio5">Santander</label>
                   </div>
                   <div class="inputGroup">
-                     <input id="bancoRadio6" name="bancoRadio" type="radio" value="Outros" required/>
-                     <label for="bancoRadio6">Outros (especifique)</label>
+                     <div class="d-flex gap-3">
+                        <div class="w-100 testa">
+                           <input id="bancoRadio6" name="bancoRadio" type="radio" value="Outros" required/>
+                           <label for="bancoRadio6">Outros (especifique)</label>
+                        </div>
+                        <div class="outro w-100 d-flex align-items-center justify-content-end gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                           <input type="text" name="bancooutro" placeholder="Especifique" />
+                        </div>
+                     </div>
                   </div>
                   <div class="inputGroup">
                      <input id="bancoRadio7" name="bancoRadio" type="radio" value="Outros" required/>
                      <label for="bancoRadio7">Nenhum</label>
                   </div>
-                  <div id="outrosbanco" style="display: none;">
-                     <input id="outrosInput" type="text" name="outrosInput" placeholder="Especifique" />
-                  </div>
-                  <p class="mt-3"><b>Nota:</b> Anotar "Nenhum" somente em último caso.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Anotar "Nenhum" somente em último caso.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Banco -->
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção checkbox imagens -->
                <fieldset>
-                  <h1>Qual(is) a(s) coloração(ões) que usa atualmente?</h1>
-                  <h2>Questão tipo RM com imagens e com selecionador oculto</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo RM com imagens e com selecionador oculto</h1>
+                     <h2>Qual(is) a(s) coloração(ões) que usa atualmente?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Anotar todas as que se aplicam</p>
+                  </div>
                   <div class="checkboximagens d-flex flex-wrap gap-4">
                      <div class="inputGroup col-12 col-md-2 col-lg-2">
                         <input id="imgcheckbox1" name="imgCheckbox" type="checkbox" value="img1" required/>
@@ -299,26 +409,61 @@
                         <label for="imgcheckbox5"><img class="img-fluid mx-auto d-block rounded" src="./assets/img/biocolor.jpg" alt=""></label>
                      </div>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Anotar todas as que se aplicam</p>
+                  <p class="mt-3"><b>Rodapé:</b> Anotar todas as que se aplicam</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção checkbox imagens -->
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção sugestão -->
                <fieldset>
-                  <h1>Gostaria de dar alguma sugestão?</h1>
-                  <h2>Qualquer comentário é importante</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Verbalização</h1>
+                     <h2>Gostaria de dar alguma sugestão?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Qualquer comentário é importante</p>
+                  </div>
                   <div class="form-group">
                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Favor usar barras duplas "//" para separar assunto(s) diferente(s)</p>
+                  <p class="mt-3"><b>Rodapé:</b> Favor usar barras duplas "//" para separar assunto(s) diferente(s)</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção sugestão -->
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção vários formatações -->
                <fieldset>
-                  <h1>Questão tipo Valor (vários formatações)</h1>
+                  <div class="mb-3">
+                     <h1>Questão tipo Valor (vários formatações)</h1>
+                     <h2>Tipo GERAL</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Preencha todas as informações</p>
+                  </div>
                   <div class="form-group mb-4 mt-4">
                      <label for="nomeFantasia" class="mb-2">Descrição: Tipo GERAL</label>
                      <input type="text" class="form-control" id="nomeFantasia" placeholder="Anote o nome fantasia da empresa">
@@ -355,10 +500,26 @@
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção vários formatações -->
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção  Combo RU -->
                <fieldset>
-                  <h1>Dos produtos e serviços financeiros abaixo, por favor, indique qual o que mais utiliza?</h1>
-                  <h2>Questão tipo Combo RU</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Combo RU</h1>
+                     <h2>Dos produtos e serviços financeiros abaixo, por favor, indique qual o que mais utiliza?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Aceita somente uma opção</p>
+                  </div>
                   <select class="form-select form-select-lg mb-3" aria-label="Escolha uma opção">
                      <option value="" selected>Selecione uma opção</option>
                      <option value="Conta corrente">Conta corrente</option>
@@ -385,15 +546,32 @@
                      <option value="Conta global">Conta global</option>
                      <option value="Cartão internacional">Cartão internacional</option>
                   </select>
-                  <p class="mt-3"><b>Nota:</b> Escolha uma das opções.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Escolha uma das opções.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção  Combo RU -->
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção Tabela bancos -->
                <fieldset>
-                  <h1>Qual sua satisfação com cada serviço dos bancos?</h1>
-                  <h2>Questão tipo Grid Matriz </h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Grid Matriz</h1>
+                     <h2>Qual sua satisfação com cada serviço dos bancos?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Aceita somente uma opção</p>
+                  </div>
                   <div class="table-responsive">
                      <table class="table">
                         <thead>
@@ -665,15 +843,32 @@
                         </tbody>
                      </table>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Escolha uma das opções.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Escolha uma das opções.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Tabela bancos -->
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção Cerveja -->
                <fieldset>
-                  <h1>Quais suas marcas de cerveja preferidas (na ordem)?</h1>
-                  <h2>Coloque 1 na que mais gosta, 2 na segunda e assim em diante...</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Ranking (rodiziado)</h1>
+                     <h2>Quais suas marcas de cerveja preferidas (na ordem)?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Coloque 1 na que mais gosta, 2 na segunda e assim em diante...</p>
+                  </div>
                   <div class="inputGroup">
                      <input id="cervejaCheckbox1" name="cervejaCheckbox" class="cervejaCheckbox" type="checkbox" value="1" required/>
                      <label for="cervejaCheckbox1"><span class="ordem"></span>Antarctica</label>
@@ -703,15 +898,34 @@
                      <label for="cervejaCheckbox7"><span class="ordem"></span>Skol </label>
                   </div>
                   <div id="ordemEscolha"></div>
-                  <p class="mt-3"><b>Nota:</b> Favor marcar ao menos 3 cervejas.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Favor marcar ao menos 3 cervejas.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Cerveja -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção Somatória em Porcentagem -->
                <fieldset>
-                  <h1>Divida seus gastos percentualmente:</h1>
-                  <h2>Questão tipo Somatória</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Somatória</h1>
+                     <h2>Divida seus gastos percentualmente:</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b></p>
+                  </div>
                   <div class="mb-3">
                      <label for="padariaPorcentagem" class="form-label">Padaria (%)</label>
                      <input type="number" class="form-control" id="padariaPorcentagem" min="0" max="100" step="1" oninput="calcularSomaPorcentagem()">
@@ -736,48 +950,83 @@
                      <label for="somaPorcentagem" class="form-label">Soma das Porcentagens (%)</label>
                      <input type="text" class="form-control" id="somaPorcentagem" readonly>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> A soma das porcentagens deve chegar a 100%.</p>
+                  <p class="mt-3"><b>Rodapé:</b> A soma das porcentagens deve chegar a 100%.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Somatória em Porcentagem -->
-               <!-- Seção Somatória em Valor -->
-               <fieldset>
-                  <h1>Divida seus gastos - em reais - do último final de semana:</h1>
-                  <h2>Questão tipo Somatória - Com Flag de exibição compacta</h2>
-                  <div class="mb-3">
-                     <label for="padariaMoeda" class="form-label">Padaria (R$)</label>
-                     <input type="number" class="form-control" id="padariaMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
-                  </div>
-                  <div class="mb-3">
-                     <label for="mercadoMoeda" class="form-label">Mercado (R$)</label>
-                     <input type="number" class="form-control" id="mercadoMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
-                  </div>
-                  <div class="mb-3">
-                     <label for="postoMoeda" class="form-label">Posto de Gasolina (R$)</label>
-                     <input type="number" class="form-control" id="postoMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
-                  </div>
-                  <div class="mb-3">
-                     <label for="farmaciaMoeda" class="form-label">Farmácia (R$)</label>
-                     <input type="number" class="form-control" id="farmaciaMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
-                  </div>
-                  <div class="mb-3">
-                     <label for="outrosMoeda" class="form-label">Outros (R$)</label>
-                     <input type="number" class="form-control" id="outrosMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
-                  </div>
-                  <div class="mb-3">
-                     <label for="somaMoeda" class="form-label">Soma dos Gastos em Moeda (R$)</label>
-                     <input type="text" class="form-control" id="somaMoeda" readonly>
-                  </div>
-                  <p class="mt-3"><b>Nota:</b> Tente preencher todos os campos.</p>
-                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
-                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
-               </fieldset>
-               <!-- Seção Somatória em Valor -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!-- Seção Somatória em Valor -->
+              <fieldset>
+               <div class="mb-3">
+                  <h1>Questão tipo Somatória - Com Flag de exibição compacta</h1>
+                  <h2>Divida seus gastos - em reais - do último final de semana:</h2>
+                  <hr>
+                  <p><b>Texto alternativo:</b></p>
+               </div>
+               <div class="mb-3">
+                  <label for="padariaMoeda" class="form-label">Padaria</label>
+                  <input type="number" class="form-control" id="padariaMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+               </div>
+               <div class="mb-3">
+                  <label for="mercadoMoeda" class="form-label">Mercado</label>
+                  <input type="number" class="form-control" id="mercadoMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+               </div>
+               <div class="mb-3">
+                  <label for="postoMoeda" class="form-label">Posto de Gasolina</label>
+                  <input type="number" class="form-control" id="postoMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+               </div>
+               <div class="mb-3">
+                  <label for="farmaciaMoeda" class="form-label">Farmácia</label>
+                  <input type="number" class="form-control" id="farmaciaMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+               </div>
+               <div class="mb-3">
+                  <label for="outrosMoeda" class="form-label">Outros</label>
+                  <input type="number" class="form-control" id="outrosMoeda" min="0" step="0.01" oninput="calcularSomaMoeda()">
+               </div>
+               <div class="mb-3">
+                  <label for="somaMoeda" class="form-label">Resultado</label>
+                  <input type="text" class="form-control" id="somaMoeda" readonly>
+               </div>
+               <p class="mt-3"><b>Rodapé:</b> Tente preencher todos os campos.</p>
+               <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+               <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+            </fieldset>
+            <!-- Seção Somatória em Valor -->
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção Multiplos RU e RM -->
                <fieldset>
-                  <h1>Questão tipo Multiplos RU e RM</h1>
-                  <h2>Questão tipo RU com outros (especifique)</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Multiplos RU e RM</h1>
+                     <h2></h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b></p>
+                  </div>
                   <div class=" form-group mb-3">
                      <label for="aplicativo">Aplicativo</label>
                      <select class="form-select" id="aplicativo" name="aplicativo" required>
@@ -833,15 +1082,35 @@
                         <option value="muito_satisfeito">Muito satisfeito</option>
                      </select>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Selecione uma opção para cada item.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Selecione uma opção para cada item.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Multiplos RU e RM -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
                <!-- Seção Multiplos RU e RM GRID -->
                <fieldset>
-                  <h1>Quais serviços utiliza em cada um dos bancos?</h1>
-                  <h2>Questão tipo Multiplos RU e RM GRID</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Multiplos RU e RM GRID</h1>
+                     <h2>Quais serviços utiliza em cada um dos bancos?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b></p>
+                  </div>
                   <div class="table-responsive">
                      <table class="table tablecheckbox">
                         <thead>
@@ -1064,15 +1333,39 @@
                         </tbody>
                      </table>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Rolar a tela para ver o restante.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Rolar a tela para ver o restante.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção Multiplos RU e RM GRID -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção  Multiplos RU e RM - Com flag trocar checkbox por opção -->
                <fieldset>
-                  <h1>Qual sua satisfação com cada serviço dos bancos?</h1>
-                  <h2>Questão tipo Multiplos RU e RM - Com flag trocar checkbox por opção</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Multiplos RU e RM - Com flag trocar checkbox por opção</h1>
+                     <h2>Qual sua satisfação com cada serviço dos bancos?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b></p>
+                  </div>
                   <table class="table">
                      <thead>
                         <tr>
@@ -1277,15 +1570,40 @@
                         </tr>
                      </tbody>
                   </table>
-                  <p class="mt-3"><b>Nota:</b> Responder para todos.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Responder para todos.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção  Multiplos RU e RM - Com flag trocar checkbox por opção -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção tipo Escala com EMOJI -->
                <fieldset>
-                  <h1>Qual seu nível de satisfação com o produto?</h1>
-                  <h2>Questão tipo Escala com flag Escala de cores</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Escala</h1>
+                     <h2>Qual seu nível de satisfação com o produto?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Arraste até o nível desejado</p>
+                  </div>
                   <div id="mainrange" class="mb-5 mt-5">
                      <div class="text-center mb-3">
                         <label class="text-center" for="range" style="color: #2c3e50;font-size: 18px;"><b>Nível de satisfação:</b> {{ val }}% - <label for="range" style="color: #00b0a9">
@@ -1311,15 +1629,38 @@
                         <div class="rangertext">Totalmente satisfeito</div>
                      </div>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Arraste até o nível desejado.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Arraste até o nível desejado.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção tipo Escala com EMOJI -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção nível de conhecimento dos esportes -->
                <fieldset>
-                  <h1>Qual seu nível de conhecimento sobre cada um dos esportes?</h1>
-                  <h2>Questão tipo Radio</h2>
+                  <div class="mb-3">
+                     <h1>Questão tipo Accordion</h1>
+                     <h2>Qual seu nível de conhecimento sobre cada um dos esportes?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Marque todos</p>
+                  </div>
                   <table class="table">
                      <thead>
                         <tr>
@@ -1519,15 +1860,35 @@
                         </tr>
                      </tbody>
                   </table>
-                  <p class="mt-3"><b>Nota:</b> Marque todos.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Marque todos.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção nível de conhecimento dos esportes -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                <!-- Seção checkbox imagens gondola-->
                <fieldset>
-                  <h1>Imagine que você está escolhendo uma coloração/ tonalizante para pintar o seu cabelo. Qual dessas opções você compraria?</h1>
-                  <h2>Questão Tipo Gondola</h2>
+                  <div class="mb-3">
+                     <h1>Questão Tipo Gondola</h1>
+                     <h2>Imagine que você está escolhendo uma coloração/ tonalizante para pintar o seu cabelo. Qual dessas opções você compraria?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Você pode escolher quantas opções quiser</p>
+                  </div>
                   <div class="checkboximagens d-flex flex-wrap gap-4">
                      <div class="inputGroup col-12 col-md-2 col-lg-2">
                         <input id="imgcheckbox1" name="imgCheckbox" type="checkbox" value="img1" required/>
@@ -1580,7 +1941,7 @@
                         <div class="text-center"><b><small>R$ 26,50</small></b></div>
                      </div>
                   </div>
-                  <p class="mt-3"><b>Nota:</b> Você pode escolher quantas opções quiser</p>
+                  <p class="mt-3"><b>Rodapé:</b> Você pode escolher quantas opções quiser</p>
                   <button type="submit" name="next" class="next action-button" value="Enviar">Enviar</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>

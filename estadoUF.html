@@ -16,10 +16,14 @@
                <!-- Logo -->
                <img class="logo d-flex mx-auto mb-5" src="./assets/img/logo.png" alt="">
                <!-- Logo -->
-                <!-- Seção Estado UF -->
-                <fieldset>
-                  <h1>Estado - Anote a UF</h1>
-                  <h2>Questão tipo RU com outros (especifique)</h2>
+                 <!-- Seção Estado UF -->
+               <fieldset>
+                  <div class="mb-3">
+                     <h1>Questão tipo RU com outros (especifique)</h1>
+                     <h2>Estado</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Anote a UF</p>
+                  </div>
                   <div class="inputGroup">
                      <input id="estadoRadio1" name="estadoRadio" type="radio" value="SP" required/>
                      <label for="estadoRadio1">1. SP</label>
@@ -33,13 +37,20 @@
                      <label for="estadoRadio3">3. MG</label>
                   </div>
                   <div class="inputGroup">
-                     <input id="estadoRadio4" name="estadoRadio" type="radio" value="Outros" required/>
-                     <label for="estadoRadio4">4. Outro</label>
+                     <div class="d-flex gap-3">
+                        <div class="w-100 testa">
+                           <input id="estadoRadio4" name="estadoRadio" type="radio" value="Outros" required/>
+                           <label for="estadoRadio4">4. Outros (especifique)</label>
+                        </div>
+                        <div class="outro w-100 d-flex align-items-center justify-content-end gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                           <input type="text" name="estadooutro" placeholder="Especifique" />
+                        </div>
+                     </div>
                   </div>
-                  <div id="outroestado" style="display: none;">
-                     <input id="outrosInput" type="text" name="outrosInput" placeholder="Especifique" />
-                  </div>
-                  <p class="mt-3"><b>Nota:</b> Caso opte por selecionar a opção "Outro", será necessário inserir o estado (UF) correspondente.</p>
+                  <p class="mt-3"><b>Rodapé:</b> Caso opte por selecionar a opção "Outro", será necessário inserir o estado (UF) correspondente.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>

@@ -52,40 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// RADIO CASO ESCOLHA OUTRO MOSTRA OUTRO CAMPO PARA INSERIR O TEXTO
-document.addEventListener("DOMContentLoaded", function () {
-   const estadoRadio4 = document.getElementById("estadoRadio4");
-   const outrosEspecifique = document.getElementById("outroestado");
-
-   estadoRadio4.addEventListener("change", function () {
-     if (estadoRadio4.checked) {
-       outrosEspecifique.style.display = "block";
-     } else {
-       outrosEspecifique.style.display = "none";
-     }
-   });
- });
-
-
-// RADIO CASO ESCOLHA OUTRO MOSTRA OUTRO CAMPO PARA INSERIR O TEXTO
- document.addEventListener("DOMContentLoaded", function () {
-  const bancoRadio6 = document.getElementById("bancoRadio6");
-  const outrosEspecifiqueBanco = document.getElementById("outrosbanco");
-
-  bancoRadio6.addEventListener("change", function () {
-    if (bancoRadio6.checked) {
-      outrosEspecifiqueBanco.style.display = "block";
-    } else {
-      outrosEspecifiqueBanco.style.display = "none";
-    }
-  });
-});
-
-
-
-
-
-
 
 // MODAL DO FORM COM IMAGEM
 document.addEventListener("DOMContentLoaded", function() {

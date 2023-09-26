@@ -16,46 +16,57 @@
                <!-- Logo -->
                <img class="logo d-flex mx-auto mb-5" src="./assets/img/logo.png" alt="">
                <!-- Logo -->
+                <!-- Seção Banco -->
+                <fieldset>
+                  <div class="mb-3">
+                     <h1>Questão tipo RM - com outros (especifique) e código exclusivo (nenhum)</h1>
+                     <h2>Em quais bancos você tem conta corrente?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Anotar todos os que se aplicam</p>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio1" name="bancoRadio" type="radio" value="SP" required/>
+                     <label for="bancoRadio1">Banco do Brasil</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio2" name="bancoRadio" type="radio" value="RJ" required/>
+                     <label for="bancoRadio2">Bradesco</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio3" name="bancoRadio" type="radio" value="MG" required/>
+                     <label for="bancoRadio3">Caixa Econômica Federal</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio4" name="bancoRadio" type="radio" value="Outros" required/>
+                     <label for="bancoRadio4">Itaú</label>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio5" name="bancoRadio" type="radio" value="Outros" required/>
+                     <label for="bancoRadio5">Santander</label>
+                  </div>
+                  <div class="inputGroup">
+                     <div class="d-flex gap-3">
+                        <div class="w-100 testa">
+                           <input id="bancoRadio6" name="bancoRadio" type="radio" value="Outros" required/>
+                           <label for="bancoRadio6">Outros (especifique)</label>
+                        </div>
+                        <div class="outro w-100 d-flex align-items-center justify-content-end gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                           <input type="text" name="bancooutro" placeholder="Especifique" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="inputGroup">
+                     <input id="bancoRadio7" name="bancoRadio" type="radio" value="Outros" required/>
+                     <label for="bancoRadio7">Nenhum</label>
+                  </div>
+                  <p class="mt-3"><b>Rodapé:</b> Anotar "Nenhum" somente em último caso.</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
                <!-- Seção Banco -->
-               <fieldset>
-                <h1>Em quais bancos você tem conta corrente?</h1>
-                <h2>Questão tipo RM - com outros (especifique) e código exclusivo (nenhum)</h2>
-                <div class="inputGroup">
-                   <input id="bancoRadio1" name="bancoRadio" type="radio" value="SP" required/>
-                   <label for="bancoRadio1">Banco do Brasil</label>
-                </div>
-                <div class="inputGroup">
-                   <input id="bancoRadio2" name="bancoRadio" type="radio" value="RJ" required/>
-                   <label for="bancoRadio2">Bradesco</label>
-                </div>
-                <div class="inputGroup">
-                   <input id="bancoRadio3" name="bancoRadio" type="radio" value="MG" required/>
-                   <label for="bancoRadio3">Caixa Econômica Federal</label>
-                </div>
-                <div class="inputGroup">
-                   <input id="bancoRadio4" name="bancoRadio" type="radio" value="Outros" required/>
-                   <label for="bancoRadio4">Itaú</label>
-                </div>
-                <div class="inputGroup">
-                   <input id="bancoRadio5" name="bancoRadio" type="radio" value="Outros" required/>
-                   <label for="bancoRadio5">Santander</label>
-                </div>
-                <div class="inputGroup">
-                   <input id="bancoRadio6" name="bancoRadio" type="radio" value="Outros" required/>
-                   <label for="bancoRadio6">Outros (especifique)</label>
-                </div>
-                <div class="inputGroup">
-                   <input id="bancoRadio7" name="bancoRadio" type="radio" value="Outros" required/>
-                   <label for="bancoRadio7">Nenhum</label>
-                </div>
-                <div id="outrosbanco" style="display: none;">
-                   <input id="outrosInput" type="text" name="outrosInput" placeholder="Especifique" />
-                </div>
-                <p class="mt-3"><b>Nota:</b> Anotar "Nenhum" somente em último caso.</p>
-                <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
-                <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
-             </fieldset>
-             <!-- Seção Banco -->
             </form>
             <!-- Formulário  -->
          </div>
