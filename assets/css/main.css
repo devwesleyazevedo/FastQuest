@@ -528,8 +528,9 @@
 }
 .col-table span {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 0;  
+    color: #000;
 }
 .col-table .inputGroup label {
     width: 40px;

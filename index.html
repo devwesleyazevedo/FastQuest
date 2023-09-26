@@ -1417,218 +1417,181 @@
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
                <!-- Seção tipo Escala com EMOJI -->
-               <!-- Seção nível de conhecimento dos esportes -->
-               <fieldset>
-                  <div class="mb-3">
-                     <h1>Questão tipo Accordion</h1>
-                     <h2>Qual seu nível de conhecimento sobre cada um dos esportes?</h2>
-                     <hr>
-                     <p><b>Texto alternativo:</b> Marque todos</p>
-                  </div>
-                  <table class="table">
-                     <thead>
-                        <tr>
-                           <th>Esporte</th>
-                           <th class="text-center">Nenhum conhecimento</th>
-                           <th class="text-center">Pouco conhecimento</th>
-                           <th class="text-center">Básico </th>
-                           <th class="text-center">Intermediário</th>
-                           <th class="text-center">Avançado</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <div class="mt-3 d-flex gap-2 align-items-center">
-                                 <p>Futebol</p>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bb_mi" name="bb_avaliacao" type="radio" value="Nenhum conhecimento" required/>
-                                 <label for="bb_mi">Nenhum conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bb_i" name="bb_avaliacao" type="radio" value="Pouco conhecimento" required/>
-                                 <label for="bb_i">Pouco conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bb_ind" name="bb_avaliacao" type="radio" value="Básico " required/>
-                                 <label for="bb_ind">Básico </label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bb_s" name="bb_avaliacao" type="radio" value="Intermediário" required/>
-                                 <label for="bb_s">Intermediário</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bb_ms" name="bb_avaliacao" type="radio" value="Avançado" required/>
-                                 <label for="bb_ms">Avançado</label>
-                              </div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <div class="mt-3 d-flex gap-2 align-items-center">
-                                 <p>Basquete</p>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bradesco_mi" name="bradesco_avaliacao" type="radio" value="Nenhum conhecimento" required/>
-                                 <label for="bradesco_mi">Nenhum conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bradesco_i" name="bradesco_avaliacao" type="radio" value="Pouco conhecimento" required/>
-                                 <label for="bradesco_i">Pouco conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bradesco_ind" name="bradesco_avaliacao" type="radio" value="Básico " required/>
-                                 <label for="bradesco_ind">Básico </label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bradesco_s" name="bradesco_avaliacao" type="radio" value="Intermediário" required/>
-                                 <label for="bradesco_s">Intermediário</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="bradesco_ms" name="bradesco_avaliacao" type="radio" value="Avançado" required/>
-                                 <label for="bradesco_ms">Avançado</label>
-                              </div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <div class="mt-3 d-flex gap-2 align-items-center">
-                                 <p>Vôlei</p>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="caixa_mi" name="caixa_avaliacao" type="radio" value="Nenhum conhecimento" required/>
-                                 <label for="caixa_mi">Nenhum conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="caixa_i" name="caixa_avaliacao" type="radio" value="Pouco conhecimento" required/>
-                                 <label for="caixa_i">Pouco conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="caixa_ind" name="caixa_avaliacao" type="radio" value="Básico " required/>
-                                 <label for="caixa_ind">Básico </label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="caixa_s" name="caixa_avaliacao" type="radio" value="Intermediário" required/>
-                                 <label for="caixa_s">Intermediário</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="caixa_ms" name="caixa_avaliacao" type="radio" value="Avançado" required/>
-                                 <label for="caixa_ms">Avançado</label>
-                              </div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <div class="mt-3 d-flex gap-2 align-items-center">
-                                 <p>Surf</p>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="surf_mi" name="surf_avaliacao" type="radio" value="Nenhum conhecimento" required/>
-                                 <label for="surf_mi">Nenhum conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="surf_i" name="surf_avaliacao" type="radio" value="Pouco conhecimento" required/>
-                                 <label for="surf_i">Pouco conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="surf_ind" name="surf_avaliacao" type="radio" value="Básico " required/>
-                                 <label for="surf_ind">Básico </label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="surf_s" name="surf_avaliacao" type="radio" value="Intermediário" required/>
-                                 <label for="surf_s">Intermediário</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="surf_ms" name="surf_avaliacao" type="radio" value="Avançado" required/>
-                                 <label for="surf_ms">Avançado</label>
-                              </div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <div class="mt-3 d-flex gap-2 align-items-center">
-                                 <p>Skate</p>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="skate_mi" name="skate_avaliacao" type="radio" value="Nenhum conhecimento" required/>
-                                 <label for="skate_mi">Nenhum conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="skate_i" name="skate_avaliacao" type="radio" value="Pouco conhecimento" required/>
-                                 <label for="skate_i">Pouco conhecimento</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="skate_ind" name="skate_avaliacao" type="radio" value="Básico" required/>
-                                 <label for="skate_ind">Básico</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="skate_s" name="skate_avaliacao" type="radio" value="Intermediário" required/>
-                                 <label for="skate_s">Intermediário</label>
-                              </div>
-                           </td>
-                           <td>
-                              <div class="inputGroup">
-                                 <input id="skate_ms" name="skate_avaliacao" type="radio" value="Avançado" required/>
-                                 <label for="skate_ms">Avançado</label>
-                              </div>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <p class="mt-3"><b>Rodapé:</b> Marque todos.</p>
-                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
-                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
-               </fieldset>
-               <!-- Seção nível de conhecimento dos esportes -->
+<!-- Seção nível de conhecimento dos esportes -->
+<fieldset>
+   <div class="mb-3">
+      <h1>Questão tipo Accordion</h1>
+      <h2>Qual seu nível de conhecimento sobre cada um dos esportes?</h2>
+      <hr>
+      <p><b>Texto alternativo:</b> Marque todos</p>
+   </div>
+   <div class="row">
+      <div class="col-table text-center">
+         <p><span class="d-block">Futebol</span></p>
+         <b>Nenhum conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="futebol_1" name="futebol" type="radio" value="Nenhum conhecimento" required/>
+            <label for="futebol_1"></label>
+         </div>
+         <hr>
+         <b>Pouco conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="futebol_2" name="futebol" type="radio" value="Nenhum conhecimento" required/>
+            <label for="futebol_2"></label>
+         </div>
+         <hr>
+         <b>Básico </b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="futebol_3" name="futebol" type="radio" value="Nenhum conhecimento" required/>
+            <label for="futebol_3"></label>
+         </div>
+         <hr>
+         <b>Intermediário</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="futebol_4" name="futebol" type="radio" value="Nenhum conhecimento" required/>
+            <label for="futebol_4"></label>
+         </div>
+         <hr>
+         <b>Avançado</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="futebol_5" name="futebol" type="radio" value="Nenhum conhecimento" required/>
+            <label for="futebol_5"></label>
+         </div>
+      </div>
+      <div class="col-table text-center">
+         <p><span class="d-block">Basquete</span></p>
+         <b>Nenhum conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Basquete_1" name="Basquete" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Basquete_1"></label>
+         </div>
+         <hr>
+         <b>Pouco conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Basquete_2" name="Basquete" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Basquete_2"></label>
+         </div>
+         <hr>
+         <b>Básico </b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Basquete_3" name="Basquete" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Basquete_3"></label>
+         </div>
+         <hr>
+         <b>Intermediário</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Basquete_4" name="Basquete" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Basquete_4"></label>
+         </div>
+         <hr>
+         <b>Avançado</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Basquete_5" name="Basquete" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Basquete_5"></label>
+         </div>
+      </div>
+      <div class="col-table text-center">
+         <p><span class="d-block">Vôlei</span></p>
+         <b>Nenhum conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Volei_1" name="Volei" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Volei_1"></label>
+         </div>
+         <hr>
+         <b>Pouco conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Volei_2" name="Volei" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Volei_2"></label>
+         </div>
+         <hr>
+         <b>Básico </b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Volei_3" name="Volei" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Volei_3"></label>
+         </div>
+         <hr>
+         <b>Intermediário</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Volei_4" name="Volei" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Volei_4"></label>
+         </div>
+         <hr>
+         <b>Avançado</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Volei_5" name="Volei" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Volei_5"></label>
+         </div>
+      </div>
+      <div class="col-table text-center">
+         <p><span class="d-block">Surf</span></p>
+         <b>Nenhum conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Surf_1" name="Surf" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Surf_1"></label>
+         </div>
+         <hr>
+         <b>Pouco conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Surf_2" name="Surf" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Surf_2"></label>
+         </div>
+         <hr>
+         <b>Básico </b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Surf_3" name="Surf" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Surf_3"></label>
+         </div>
+         <hr>
+         <b>Intermediário</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Surf_4" name="Surf" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Surf_4"></label>
+         </div>
+         <hr>
+         <b>Avançado</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Surf_5" name="Surf" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Surf_5"></label>
+         </div>
+      </div>
+      <div class="col-table text-center">
+         <p><span class="d-block">Skate</span></p>
+         <b>Nenhum conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Skate_1" name="Skate" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Skate_1"></label>
+         </div>
+         <hr>
+         <b>Pouco conhecimento</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Skate_2" name="Skate" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Skate_2"></label>
+         </div>
+         <hr>
+         <b>Básico </b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Skate_3" name="Skate" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Skate_3"></label>
+         </div>
+         <hr>
+         <b>Intermediário</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Skate_4" name="Skate" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Skate_4"></label>
+         </div>
+         <hr>
+         <b>Avançado</b>
+         <div class="inputGroup d-flex justify-content-center align-items-center">
+            <input id="Skate_5" name="Skate" type="radio" value="Nenhum conhecimento" required/>
+            <label for="Skate_5"></label>
+         </div>
+      </div>
+   </div>
+   <p class="mt-3"><b>Nota:</b> Marque todos.</p>
+   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+</fieldset>
+<!-- Seção nível de conhecimento dos esportes -->
                <!-- Seção checkbox imagens gondola-->
                <fieldset>
                   <div class="mb-3">
