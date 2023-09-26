@@ -330,50 +330,61 @@
     }
 }
 /*ESTRELAS*/
- .inputGroupStar span {
-     width: 100%;
-     display: block;
-     text-align: center;
-     font-weight: 700;
-}
- .rating {
-     unicode-bidi: bidi-override;
-     direction: rtl;
-     text-align: left;
-     position: relative;
-     max-width: 600px;
-}
- .rating input {
-     display: none;
-}
- .rating label {
-     display: inline-block;
-     padding: 5px;
-     font-size: 80px;
-     line-height: 80px;
-     color: #ccc;
-     cursor: pointer;
-     text-align: center;
-}
- .rating label:hover, .rating label:hover ~ label, .rating input:checked ~ label {
-     color: #ffcc00;
-}
- table tr:nth-child(even) td, table tr:nth-child(even) th {
-     background-color: #f1f1f1;
-}
- @media(max-width: 700px){
-     .rating {
-         justify-content: center !important;
+       .inputGroupStar span {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-weight: 700;
     }
-     .rating label {
-         font-size: 40px;
-         line-height: 40px;
+    
+    .rating {
+        unicode-bidi: bidi-override;
+        text-align: left;
+        position: relative;
+        max-width: 600px;
     }
-     .inputGroupStar span {
-         font-size: 13px;
-         font-weight: 600;
+    
+    .rating input {
+        display: none;
     }
-}
+    
+    .rating label {
+        display: inline-block;
+        padding: 5px;
+        font-size: 80px;
+        line-height: 80px;
+        color: #ccc;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input:checked ~ label,
+    .rating label.selected {
+        color: #ffcc00;
+    }
+    
+    table tr:nth-child(even) td,
+    table tr:nth-child(even) th {
+        background-color: #f1f1f1;
+    }
+    
+    @media (max-width: 700px) {
+        .rating {
+            justify-content: center !important;
+        }
+    
+        .rating label {
+            font-size: 40px;
+            line-height: 40px;
+        }
+    
+        .inputGroupStar span {
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
 /*GRAU DE CONCORDÂNCIA 0 a 10*/
  .navegacaosatisfation .not, .navegacaosatisfation .yes {
      -webkit-background-clip: text;
