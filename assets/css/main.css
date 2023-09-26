@@ -460,7 +460,7 @@
 }
 /*SELECT*/
  select.form-select {
-     padding: 20px;
+     padding: 15px;
      font-size: 17px;
      width: 100%;
      display: block;
@@ -499,59 +499,71 @@
      box-shadow: 0px 2px 6px 0px rgba(19, 18, 66, 0.07);
 }
 /*TABELA*/
- .table th {
-     font-size: 14px;
-     line-height: 35px;
+.col-table {
+    width: 20%;
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    border-left: 0;
 }
- .table select {
-     font-size: 13px;
-     padding: 10px 20px;
+.col-table  img {
+    width: 50px;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
- .table img {
-     border-radius: 4px;
+.container .row .col-table:nth-child(1) {
+    border-left: 1px solid #e7e7e7;
 }
- .table p {
-     font-weight: bold;
-     font-size: 14px;
-     margin-bottom: 0;
+.container .row .col-table:nth-child(2), .container .row .col-table:nth-child(4) {
+    background: #f5f5f5;
 }
- .table .inputGroup label:after {
-     display: none;
+.col-table select {
+    font-size: 13px;
+    padding: 10px 20px; 
 }
- .table .inputGroup label {
-     padding: 8px 10px;
-     font-size: 14px;
-     font-weight: 600;
-     text-align: center;
+.col-table b {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
 }
- .table.tablecheckbox .inputGroup label {
-     width: 32px;
-     height: 32px;
-     border: none;
+.col-table span {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0;  
 }
- .table.tablecheckbox .inputGroup input {
-     left: 0;
-     right: 0;
+.col-table .inputGroup label {
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
 }
- .table.tablecheckbox .inputGroup label:after {
-     display: initial;
-     left: 0;
-}
- .table.tablecheckbox input.form-control{
-     padding: 10px;
+.col-table .inputGroup label:after {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
  @media(max-width: 700px){
-     .table img {
-         max-width: 50px;
+    .col-table {
+        width: 100%;
+        text-align: left !important;
+    } 
+    .container .row .col-table:nth-child(2), .container .row .col-table:nth-child(4) {
+        background: #fff;
     }
-     .table p {
-         display: none !important;
+    .col-table {
+        border: 1px solid #e7e7e7;
+        margin-bottom: 15px;
     }
-     .table tbody th {
-         display: none !important;
+    .col-table b {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 0;
     }
-     .firstCO {
-         display: none !important;
+    .col-table span {
+        font-size: 16px;
+    }
+    .col-table .inputGroup {
+        justify-content: start !important;
     }
 }
 /*CHECKBOX RANKING*/

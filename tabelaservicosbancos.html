@@ -17,229 +17,188 @@
                <img class="logo d-flex mx-auto mb-5" src="./assets/img/logo.png" alt="">
                <!-- Seção Multiplos RU e RM GRID -->
                <fieldset>
-                  <h1>Quais serviços utiliza em cada um dos bancos?</h1>
-                  <h2>Questão tipo Multiplos RU e RM GRID</h2>
-                  <div class="table-responsive">
-                     <table class="table tablecheckbox">
-                        <thead>
-                           <tr class="text-center">
-                              <th scope="col" class="firstCO"></th>
-                              <th scope="col">Aplicativo</th>
-                              <th scope="col">Caixas</th>
-                              <th scope="col">Agência</th>
-                              <th scope="col">Site</th>
-                              <th scope="col">Gerente</th>
-                              <th scope="col"> Outros (especifique):</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <th class="col-3">
-                                 <div class="mt-3 d-flex gap-2 align-items-center">
-                                    <img clas="img-fluid rounded" width="30" src="./assets/img/banco-do-brasil.png" alt="">
-                                    <p>Banco do Brasil</p>
-                                 </div>
-                              </th>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bb_mi1" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bb_mi1"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bb_mi2" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bb_mi2"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bb_mi3" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bb_mi3"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bb_mi4" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bb_mi4"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bb_mi5" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bb_mi5"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <input type="text" name="outros_bb" class="form-control" sstyle="max-width: 250px;">
-                              </td>
-                           </tr>
-                           <tr>
-                              <th class="col-3">
-                                 <div class="mt-3 d-flex gap-2 align-items-center">
-                                    <img clas="img-fluid rounded" width="30" src="./assets/img/bradesco.png" alt="">
-                                    <p>Bradesco</p>
-                                 </div>
-                              </th>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bradesco_mi1" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bradesco_mi1"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bradesco_mi2" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bradesco_mi2"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bradesco_mi3" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bradesco_mi3"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bradesco_mi4" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bradesco_mi4"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="bradesco_mi5" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="bradesco_mi5"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <input type="text" name="outros_bradesco" class="form-control" sstyle="max-width: 250px;">
-                              </td>
-                           </tr>
-                           <tr>
-                              <th class="col-3">
-                                 <div class="mt-3 d-flex gap-2 align-items-center">
-                                    <img clas="img-fluid rounded" width="30" src="./assets/img/caixa-economica-federal.png" alt="">
-                                    <p>Caixa</p>
-                                 </div>
-                              </th>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="caixa_mi1" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="caixa_mi1"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="caixa_mi2" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="caixa_mi2"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="caixa_mi3" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="caixa_mi3"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="caixa_mi4" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="caixa_mi4"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="caixa_mi5" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="caixa_mi5"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <input type="text" name="outros_caixa" class="form-control" sstyle="max-width: 250px;">
-                              </td>
-                           </tr>
-                           <tr>
-                              <th class="col-3">
-                                 <div class="mt-3 d-flex gap-2 align-items-center">
-                                    <img clas="img-fluid rounded" width="30" src="./assets/img/itau.png" alt="">
-                                    <p>Itaú</p>
-                                 </div>
-                              </th>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="itau_mi1" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="itau_mi1"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="itau_mi2" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="itau_mi2"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="itau_mi3" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="itau_mi3"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="itau_mi4" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="itau_mi4"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="itau_mi5" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="itau_mi5"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <input type="text" name="outros_itau" class="form-control" sstyle="max-width: 250px;">
-                              </td>
-                           </tr>
-                           <tr>
-                              <th class="col-3">
-                                 <div class="mt-3 d-flex gap-2 align-items-center">
-                                    <img clas="img-fluid rounded" width="30" src="./assets/img/santander-bank.jpg" alt="">
-                                    <p>Santander</p>
-                                 </div>
-                              </th>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="santander_mi1" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="santander_mi1"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="santander_mi2" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="santander_mi2"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="santander_mi3" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="santander_mi3"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="santander_mi4" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="santander_mi4"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="inputGroup d-flex justify-content-center align-items-center">
-                                    <input id="santander_mi5" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
-                                    <label for="santander_mi5"></label>
-                                 </div>
-                              </td>
-                              <td>
-                                 <input type="text" name="outros_santander" class="form-control" sstyle="max-width: 250px;">
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
+                  <div class="mb-3">
+                     <h1>Questão tipo Multiplos RU e RM GRID</h1>
+                     <h2>Quais serviços utiliza em cada um dos bancos?</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> </p>
+                  </div>
+                  <div class="row">
+                     <div class="col-table text-center">
+                        <p><img class="img-fluid rounded" width="70" src="./assets/img/banco-do-brasil.png" alt=""><span class="d-block">Banco do Brasil</span></p>
+                        <b>Aplicativo</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bb_aplicativo" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bb_aplicativo"></label>
+                        </div>
+                        <hr>
+                        <b>Caixas eletrônicos</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bb_caixas_eletronicos" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bb_caixas_eletronicos"></label>
+                        </div>
+                        <hr>
+                        <b>Agência</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bb_agencia" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bb_agencia"></label>
+                        </div>
+                        <hr>
+                        <b>Site</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bb_site" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bb_site"></label>
+                        </div>
+                        <hr>
+                        <b>Gerente</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bb_gerente" name="bb_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bb_gerente"></label>
+                        </div>
+                        <hr>
+                        <b>Outros (especifique):</b>
+                        <input type="text" name="outros_bancodobrasil" class="form-control">
+                     </div>
+                     <div class="col-table text-center">
+                        <p><img class="img-fluid rounded" width="70" src="./assets/img/bradesco.png" alt=""> <span class="d-block">Bradesco</span></p>
+                        <b>Aplicativo</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bradesco_aplicativo" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bradesco_aplicativo"></label>
+                        </div>
+                        <hr>
+                        <b>Caixas eletrônicos</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bradesco_caixas_eletronicos" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bradesco_caixas_eletronicos"></label>
+                        </div>
+                        <hr>
+                        <b>Agência</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bradesco_agencia" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bradesco_agencia"></label>
+                        </div>
+                        <hr>
+                        <b>Site</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bradesco_site" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bradesco_site"></label>
+                        </div>
+                        <hr>
+                        <b>Gerente</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="bradesco_gerente" name="bradesco_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="bradesco_gerente"></label>
+                        </div>
+                        <hr>
+                        <b>Outros (especifique):</b>
+                        <input type="text" name="outros_bradesco" class="form-control">
+                     </div>
+                     <div class="col-table text-center">
+                        <p><img class="img-fluid rounded" width="70" src="./assets/img/caixa-economica-federal.png" alt=""> <span class="d-block">Caixa</span></p>
+                        <b>Aplicativo</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="caixa_aplicativo" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="caixa_aplicativo"></label>
+                        </div>
+                        <hr>
+                        <b>Caixas eletrônicos</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="caixa_caixas_eletronicos" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="caixa_caixas_eletronicos"></label>
+                        </div>
+                        <hr>
+                        <b>Agência</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="caixa_agencia" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="caixa_agencia"></label>
+                        </div>
+                        <hr>
+                        <b>Site</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="caixa_site" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="caixa_site"></label>
+                        </div>
+                        <hr>
+                        <b>Gerente</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="caixa_gerente" name="caixa_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="caixa_gerente"></label>
+                        </div>
+                        <hr>
+                        <b>Outros (especifique):</b>
+                        <input type="text" name="outros_caixa" class="form-control">
+                     </div>
+                     <div class="col-table text-center">
+                        <p><img class="img-fluid rounded" width="70" src="./assets/img/itau.png" alt=""> <span class="d-block">Itaú</span></p>
+                        <b>Aplicativo</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="itau_aplicativo" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="itau_aplicativo"></label>
+                        </div>
+                        <hr>
+                        <b>Caixas eletrônicos</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="itau_itaus_eletronicos" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="itau_itaus_eletronicos"></label>
+                        </div>
+                        <hr>
+                        <b>Agência</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="itau_agencia" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="itau_agencia"></label>
+                        </div>
+                        <hr>
+                        <b>Site</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="itau_site" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="itau_site"></label>
+                        </div>
+                        <hr>
+                        <b>Gerente</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="itau_gerente" name="itau_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="itau_gerente"></label>
+                        </div>
+                        <hr>
+                        <b>Outros (especifique):</b>
+                        <input type="text" name="outros_itau" class="form-control">
+                     </div>
+                     <div class="col-table text-center">
+                        <p><img class="img-fluid rounded" width="70" src="./assets/img/santander-bank.jpg" alt=""> <span class="d-block">Santander</span></p>
+                        <b>Aplicativo</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="santander_aplicativo" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="santander_aplicativo"></label>
+                        </div>
+                        <hr>
+                        <b>Caixas eletrônicos</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="santander_santanders_eletronicos" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="santander_santanders_eletronicos"></label>
+                        </div>
+                        <hr>
+                        <b>Agência</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="santander_agencia" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="santander_agencia"></label>
+                        </div>
+                        <hr>
+                        <b>Site</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="santander_site" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="santander_site"></label>
+                        </div>
+                        <hr>
+                        <b>Gerente</b>
+                        <div class="inputGroup d-flex justify-content-center align-items-center">
+                           <input id="santander_gerente" name="santander_avaliacao" type="checkbox" value="Nenhum conhecimento" required/>
+                           <label for="santander_gerente"></label>
+                        </div>
+                        <hr>
+                        <b>Outros (especifique):</b>
+                        <input type="text" name="outros_santander" class="form-control">
+                     </div>
                   </div>
                   <p class="mt-3"><b>Nota:</b> Rolar a tela para ver o restante.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
