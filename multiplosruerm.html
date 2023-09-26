@@ -15,7 +15,7 @@
         <form id="idform" class="p-3 p-md-4 p-lg-5 rounded">
             <!-- Logo -->
             <img class="logo d-flex mx-auto mb-5" src="./assets/img/logo.png" alt="">
- <!-- Seção Multiplos RU e RM -->
+               <!-- Seção Multiplos RU e RM -->
                <fieldset>
                   <div class="mb-3">
                      <h1>Questão tipo Multiplos RU e RM</h1>
@@ -23,61 +23,124 @@
                      <hr>
                      <p><b>Texto alternativo:</b></p>
                   </div>
-                  <div class=" form-group mb-3">
+                  <div class="form-group mb-3">
                      <label for="aplicativo">Aplicativo</label>
-                     <select class="form-select" id="aplicativo" name="aplicativo" required>
-                        <option value="" selected>Selecione uma opção</option>
-                        <option value="muito_insatisfeito">Muito insatisfeito</option>
-                        <option value="insatisfeito">Insatisfeito</option>
-                        <option value="indiferente">Indiferente</option>
-                        <option value="satisfeito">Satisfeito</option>
-                        <option value="muito_satisfeito">Muito satisfeito</option>
-                     </select>
+                     <div class="inputGroup">
+                        <input id="aplicativo_muito_insatisfeito" name="aplicativo" type="radio" value="muito_insatisfeito" required/>
+                        <label for="aplicativo_muito_insatisfeito">Muito insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="aplicativo_insatisfeito" name="aplicativo" type="radio" value="insatisfeito" required/>
+                        <label for="aplicativo_insatisfeito">Insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="aplicativo_indiferente" name="aplicativo" type="radio" value="indiferente" required/>
+                        <label for="aplicativo_indiferente">Indiferente</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="aplicativo_satisfeito" name="aplicativo" type="radio" value="satisfeito" required/>
+                        <label for="aplicativo_satisfeito">Satisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="aplicativo_muito_satisfeito" name="aplicativo" type="radio" value="muito_satisfeito" required/>
+                        <label for="aplicativo_muito_satisfeito">Muito satisfeito</label>
+                     </div>
                   </div>
-                  <div class=" form-group mb-3">
+                  <div class="form-group mb-3">
                      <label for="caixas_eletronicos">Caixas eletrônicos</label>
-                     <select class="form-select" id="caixas_eletronicos" name="caixas_eletronicos" required>
-                        <option value="" selected>Selecione uma opção</option>
-                        <option value="muito_insatisfeito">Muito insatisfeito</option>
-                        <option value="insatisfeito">Insatisfeito</option>
-                        <option value="indiferente">Indiferente</option>
-                        <option value="satisfeito">Satisfeito</option>
-                        <option value="muito_satisfeito">Muito satisfeito</option>
-                     </select>
+                     <div class="inputGroup">
+                        <input id="caixas_eletronicos_muito_insatisfeito" name="caixas_eletronicos" type="radio" value="muito_insatisfeito" required/>
+                        <label for="caixas_eletronicos_muito_insatisfeito">Muito insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="caixas_eletronicos_insatisfeito" name="caixas_eletronicos" type="radio" value="insatisfeito" required/>
+                        <label for="caixas_eletronicos_insatisfeito">Insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="caixas_eletronicos_indiferente" name="caixas_eletronicos" type="radio" value="indiferente" required/>
+                        <label for="caixas_eletronicos_indiferente">Indiferente</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="caixas_eletronicos_satisfeito" name="caixas_eletronicos" type="radio" value="satisfeito" required/>
+                        <label for="caixas_eletronicos_satisfeito">Satisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="caixas_eletronicos_muito_satisfeito" name="caixas_eletronicos" type="radio" value="muito_satisfeito" required/>
+                        <label for="caixas_eletronicos_muito_satisfeito">Muito satisfeito</label>
+                     </div>
                   </div>
-                  <div class=" form-group mb-3">
+                  <div class="form-group mb-3">
                      <label for="agencia">Agência</label>
-                     <select class="form-select" id="agencia" name="agencia" required>
-                        <option value="" selected>Selecione uma opção</option>
-                        <option value="muito_insatisfeito">Muito insatisfeito</option>
-                        <option value="insatisfeito">Insatisfeito</option>
-                        <option value="indiferente">Indiferente</option>
-                        <option value="satisfeito">Satisfeito</option>
-                        <option value="muito_satisfeito">Muito satisfeito</option>
-                     </select>
+                     <div class="inputGroup">
+                        <input id="agencia_muito_insatisfeito" name="agencia" type="radio" value="muito_insatisfeito" required/>
+                        <label for="agencia_muito_insatisfeito">Muito insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="agencia_insatisfeito" name="agencia" type="radio" value="insatisfeito" required/>
+                        <label for="agencia_insatisfeito">Insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="agencia_indiferente" name="agencia" type="radio" value="indiferente" required/>
+                        <label for="agencia_indiferente">Indiferente</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="agencia_satisfeito" name="agencia" type="radio" value="satisfeito" required/>
+                        <label for="agencia_satisfeito">Satisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="agencia_muito_satisfeito" name="agencia" type="radio" value="muito_satisfeito" required/>
+                        <label for="agencia_muito_satisfeito">Muito satisfeito</label>
+                     </div>
                   </div>
-                  <div class=" form-group mb-3">
+                  
+                  <div class="form-group mb-3">
                      <label for="site">Site</label>
-                     <select class="form-select" id="site" name="site" required>
-                        <option value="" selected>Selecione uma opção</option>
-                        <option value="muito_insatisfeito">Muito insatisfeito</option>
-                        <option value="insatisfeito">Insatisfeito</option>
-                        <option value="indiferente">Indiferente</option>
-                        <option value="satisfeito">Satisfeito</option>
-                        <option value="muito_satisfeito">Muito satisfeito</option>
-                     </select>
+                     <div class="inputGroup">
+                        <input id="site_muito_insatisfeito" name="site" type="radio" value="muito_insatisfeito" required/>
+                        <label for="site_muito_insatisfeito">Muito insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="site_insatisfeito" name="site" type="radio" value="insatisfeito" required/>
+                        <label for="site_insatisfeito">Insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="site_indiferente" name="site" type="radio" value="indiferente" required/>
+                        <label for="site_indiferente">Indiferente</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="site_satisfeito" name="site" type="radio" value="satisfeito" required/>
+                        <label for="site_satisfeito">Satisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="site_muito_satisfeito" name="site" type="radio" value="muito_satisfeito" required/>
+                        <label for="site_muito_satisfeito">Muito satisfeito</label>
+                     </div>
                   </div>
-                  <div class=" form-group mb-3">
+                  
+                  <div class="form-group mb-3">
                      <label for="gerente">Gerente</label>
-                     <select class="form-select" id="gerente" name="gerente" required>
-                        <option value="" selected>Selecione uma opção</option>
-                        <option value="muito_insatisfeito">Muito insatisfeito</option>
-                        <option value="insatisfeito">Insatisfeito</option>
-                        <option value="indiferente">Indiferente</option>
-                        <option value="satisfeito">Satisfeito</option>
-                        <option value="muito_satisfeito">Muito satisfeito</option>
-                     </select>
+                     <div class="inputGroup">
+                        <input id="gerente_muito_insatisfeito" name="gerente" type="radio" value="muito_insatisfeito" required/>
+                        <label for="gerente_muito_insatisfeito">Muito insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="gerente_insatisfeito" name="gerente" type="radio" value="insatisfeito" required/>
+                        <label for="gerente_insatisfeito">Insatisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="gerente_indiferente" name="gerente" type="radio" value="indiferente" required/>
+                        <label for="gerente_indiferente">Indiferente</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="gerente_satisfeito" name="gerente" type="radio" value="satisfeito" required/>
+                        <label for="gerente_satisfeito">Satisfeito</label>
+                     </div>
+                     <div class="inputGroup">
+                        <input id="gerente_muito_satisfeito" name="gerente" type="radio" value="muito_satisfeito" required/>
+                        <label for="gerente_muito_satisfeito">Muito satisfeito</label>
+                     </div>
                   </div>
+                  
                   <p class="mt-3"><b>Rodapé:</b> Selecione uma opção para cada item.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
