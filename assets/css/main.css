@@ -819,6 +819,54 @@ textarea.form-control {
 }
 
 /*TABELA*/
+.col-table-flex .inputGroup label:after {
+	display: none;
+}
+.col-table-flex img {
+	border-radius: 4px;
+}
+.col-table-flex .item-table {
+	padding: 0 15px;
+}
+.col-table-flex .item-table label {
+	font-size: 15px;
+	font-weight: 500;
+}
+.col-table-flex .item-table b {
+	font-size: 15px;
+	font-weight: 600;
+}
+.col-table-flex .item-table:nth-child(1), .col-table-flex .item-table:nth-child(3), .col-table-flex .item-table:nth-child(5) {
+	background-color: #f1f1f1;
+}
+@media(max-width: 700px) {
+	.col-table-flex .item-table{
+		flex-direction: column;
+		padding: 25px;
+		border-radius: 8px;
+	}
+	.col-table-flex .item-table {
+		border: 1px solid #ededed;
+		margin-bottom: 15px;
+	}
+	.col-table-flex .item-table img {
+		width: 70px;
+	}
+	.col-table-flex .item-table b {
+		font-size: 25px;
+	}
+	.col-table-flex .item-table label {
+		font-size: 18px;
+	}
+	.col-table-flex .item-table .opcoes {
+		flex-direction: column;
+		gap: 0 !important;
+		margin-top: 20px;
+	}
+	.col-table-flex .item-table .opcoes .inputGroup {
+		margin: 5px 0;
+	}
+}
 .col-table {
 	width: 20%;
 	padding: 15px;
