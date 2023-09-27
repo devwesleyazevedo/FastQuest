@@ -162,8 +162,20 @@ function calcularSomaMoeda() {
 
 
 
-
-
+// Script das estrelas
+const stars = document.querySelectorAll('.rating label');
+         
+         stars.forEach((star, index) => {
+           star.addEventListener('click', () => {
+             // Adiciona a classe 'selected' para a estrela clicada
+             stars[index].classList.add('selected');
+         
+             // Adiciona a classe 'selected' para todas as estrelas à esquerda da estrela clicada
+             for (let i = 0; i < index; i++) {
+               stars[i].classList.add('selected');
+             }
+           });
+         });
 
 
 

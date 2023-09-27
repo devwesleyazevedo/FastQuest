@@ -70,21 +70,6 @@
             <!-- Formulário  -->
          </div>
       </div>
-      <script>
-         const stars = document.querySelectorAll('.rating label');
-         
-         stars.forEach((star, index) => {
-           star.addEventListener('click', () => {
-             // Adiciona a classe 'selected' para a estrela clicada
-             stars[index].classList.add('selected');
-         
-             // Adiciona a classe 'selected' para todas as estrelas à esquerda da estrela clicada
-             for (let i = 0; i < index; i++) {
-               stars[i].classList.add('selected');
-             }
-           });
-         });
-      </script>
       <script src="https://vjs.zencdn.net/7.16.0/video.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
