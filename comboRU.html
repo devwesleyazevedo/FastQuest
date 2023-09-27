@@ -24,32 +24,37 @@
                      <hr>
                      <p><b>Texto alternativo:</b> Aceita somente uma opção</p>
                   </div>
-                  <select class="form-select form-select-lg mb-3" aria-label="Escolha uma opção">
-                     <option value="" selected>Selecione uma opção</option>
-                     <option value="Conta corrente">Conta corrente</option>
-                     <option value="Cartão de crédito">Cartão de crédito</option>
-                     <option value="Cartão de débito">Cartão de débito</option>
-                     <option value="Crediário">Crediário</option>
-                     <option value="Programas de Recompensa ou Fidelidade de cartão de crédito (milhas/ pontos/ cashback)">Programas de Recompensa ou Fidelidade de cartão de crédito (milhas/ pontos/ cashback)</option>
-                     <option value="Conta em corretora/ Banco de investimento">Conta em corretora/ Banco de investimento</option>
-                     <option value="Criptomoedas">Criptomoedas</option>
-                     <option value="Empréstimo pessoal">Empréstimo pessoal</option>
-                     <option value="Empréstimo com garantia (imóvel, automóvel, investimentos etc)">Empréstimo com garantia (imóvel, automóvel, investimentos etc)</option>
-                     <option value="Crédito consignado">Crédito consignado</option>
-                     <option value="Antecipação/ empréstimo do saque aniversário - FGTS">Antecipação/ empréstimo do saque aniversário - FGTS</option>
-                     <option value="Financiamento imobiliário">Financiamento imobiliário</option>
-                     <option value="Financiamento de carro/ moto">Financiamento de carro/ moto</option>
-                     <option value="Seguro de vida">Seguro de vida</option>
-                     <option value="Seguro de celular">Seguro de celular</option>
-                     <option value="Seguro auto/ de carro">Seguro auto/ de carro</option>
-                     <option value="Seguro residencial">Seguro residencial</option>
-                     <option value="Loja dentro do app do banco (marketplace)">Loja dentro do app do banco (marketplace)</option>
-                     <option value="Portabilidade de salário">Portabilidade de salário</option>
-                     <option value="Assistente de pagamentos">Assistente de pagamentos</option>
-                     <option value="Conta PJ (pessoa jurídica)">Conta PJ (pessoa jurídica)</option>
-                     <option value="Conta global">Conta global</option>
-                     <option value="Cartão internacional">Cartão internacional</option>
-                  </select>
+                  <div class="form-row">    
+                     <label class="select">
+                        <input type="text" value="" placeholder="Selecione uma opção..." readonly /> 
+                        <select name="option1" tabindex="-1">
+                           <option value="" selected>Selecione uma opção...</option>
+                           <option value="Conta corrente">Conta corrente</option>
+                           <option value="Cartão de crédito">Cartão de crédito</option>
+                           <option value="Cartão de débito">Cartão de débito</option>
+                           <option value="Crediário">Crediário</option>
+                           <option style="max-width: 200px;" value="Programas de Recompensa ou Fidelidade de cartão de crédito (milhas/ pontos/ cashback)">Programas de Recompensa ou Fidelidade de cartão de crédito (milhas/ pontos/ cashback)</option>
+                           <option value="Conta em corretora/ Banco de investimento">Conta em corretora/ Banco de investimento</option>
+                           <option value="Criptomoedas">Criptomoedas</option>
+                           <option value="Empréstimo pessoal">Empréstimo pessoal</option>
+                           <option value="Empréstimo com garantia (imóvel, automóvel, investimentos etc)">Empréstimo com garantia (imóvel, automóvel, investimentos etc)</option>
+                           <option value="Crédito consignado">Crédito consignado</option>
+                           <option value="Antecipação/ empréstimo do saque aniversário - FGTS">Antecipação/ empréstimo do saque aniversário - FGTS</option>
+                           <option value="Financiamento imobiliário">Financiamento imobiliário</option>
+                           <option value="Financiamento de carro/ moto">Financiamento de carro/ moto</option>
+                           <option value="Seguro de vida">Seguro de vida</option>
+                           <option value="Seguro de celular">Seguro de celular</option>
+                           <option value="Seguro auto/ de carro">Seguro auto/ de carro</option>
+                           <option value="Seguro residencial">Seguro residencial</option>
+                           <option value="Loja dentro do app do banco (marketplace)">Loja dentro do app do banco (marketplace)</option>
+                           <option value="Portabilidade de salário">Portabilidade de salário</option>
+                           <option value="Assistente de pagamentos">Assistente de pagamentos</option>
+                           <option value="Conta PJ (pessoa jurídica)">Conta PJ (pessoa jurídica)</option>
+                           <option value="Conta global">Conta global</option>
+                           <option value="Cartão internacional">Cartão internacional</option>
+                        </select>
+                     </label>
+                  </div>
                   <p class="mt-3"><b>Rodapé:</b> Escolha uma das opções.</p>
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
