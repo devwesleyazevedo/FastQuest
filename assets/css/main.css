@@ -755,15 +755,22 @@ table tr:nth-child(even) th {
 	height: 0;
 	opacity: 1e-9;
 }
-
 /*LABEL*/
 label {
 	font-weight: 600;
 }
-
+/* SOMATORIA */
+.somatoria .resultado {
+	background: #f7f5ff;
+    border-radius: 20px;
+}
+.somatoria .resultado input {
+	border: 5px solid #e4e2e9
+}
+.somatoria input::placeholder {
+	color: #c1c1c1;
+}
 /*ACCORDION*/
-
-
 .accordion.accordion-flush .accordion-button {
 	color: #fff;
 	padding: 16px;
