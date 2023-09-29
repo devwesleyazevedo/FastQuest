@@ -208,7 +208,7 @@ const slider = new Vue({
   computed: {
     getPlacement() {
       // Use a lógica para definir o valor com base no dispositivo móvel ou não
-      return this.isMobile ? ((this.val * 8)) + `%` : ((this.val * 14.5)) + `%`;
+      return this.isMobile ? ((this.val * 7)) + `%` : ((this.val * 14.5)) + `%`;
     },
   greaterThanFifty() {
   return this.val > 50 ? `var(--roundness)` : `0`;
