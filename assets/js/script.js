@@ -447,3 +447,34 @@ for( var i = 0; i < items.length; i++ )
 {
    new FormSelect( items[ i ] ); 
 }
+
+
+
+
+
+
+
+
+// Mask CEP / CEL / CPF
+function applyMask(input, type) {
+  const masks = {
+      'cep': '#####-###',
+      'celular': '(##) #####-####',
+      'cpf': '###.###.###-##'
+  };
+
+  const mask = masks[type];
+  let value = input.value.replace(/\D/g, '');
+  let maskedValue = '';
+  let maskIndex = 0;
+
+  for (let i = 0; i < mask.length; i++) {
+      if (mask[i] === '#') {
+          maskedValue += value[maskIndex++] || '';
+      } else {
+          maskedValue += mask[i];
+      }
+  }
+
+  input.value = maskedValue;
+}
