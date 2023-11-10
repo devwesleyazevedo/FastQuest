@@ -122,7 +122,7 @@ function ordenarOpcoes() {
         const checkboxValue = checkbox.value;
         const index = ordemEscolha.indexOf(checkboxValue);
         if (index !== -1) {
-            ordemSpan.textContent = index + 1; // Define o número de ordem com base na preferência atual.
+          ordemSpan.textContent = (index + 1) + 'º'; // Define o número de ordem com base na preferência atual com "º" após o número.
         }
     });
 }
@@ -149,15 +149,32 @@ function calcularSomaPorcentagem() {
 }
 
 // SOMATÓRIA MOEDA R$
-function calcularSomaMoeda() {
-  const padaria = parseFloat(document.getElementById('padariaMoeda').value) || 0;
-  const mercado = parseFloat(document.getElementById('mercadoMoeda').value) || 0;
-  const posto = parseFloat(document.getElementById('postoMoeda').value) || 0;
-  const farmacia = parseFloat(document.getElementById('farmaciaMoeda').value) || 0;
-  const outros = parseFloat(document.getElementById('outrosMoeda').value) || 0;
-  const soma = padaria + mercado + posto + farmacia + outros;
-  document.getElementById('somaMoeda').value = 'R$ ' + soma.toFixed(2);
+const moneyInputs = document.querySelectorAll('.money-input');
+const totalInput = document.getElementById('total');
+moneyInputs.forEach((input) => {
+    input.addEventListener('input', formatCurrency);
+});
+function formatCurrency(event) {
+    const input = event.target;
+    let value = input.value.replace(/\D/g, '');
+    value = (value / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    input.value = value;
+    updateTotal();
 }
+function updateTotal() {
+    let total = 0;
+    moneyInputs.forEach((input) => {
+        const value = parseFloat(input.value.replace('R$ ', '').replace(/\./g, '').replace(',', '.').replace('R$','').trim());
+        if (!isNaN(value)) {
+            total += value;
+        }
+    });
+    totalInput.value = total.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    });
+}
+
 
 
 
@@ -243,6 +260,82 @@ const slider = new Vue({
   });
 
 
+
+
+// Mask % input
+function prefix_percent(id) {
+  const suffix = ' %';
+  const bypass = [9, 16, 17, 18, 36, 37, 38, 39, 40, 91, 92, 93];
+  const saveValue = (element, data) => {
+    element.dataset.value = data;
+  };
+  const pureValue = (element) => {
+    let value = element.value.replace(/\D/g, '');
+    value = parseInt(value.replace(suffix, ''))
+    return value || '';
+  };
+  const focusNumber = (element) => {
+    element.setSelectionRange(element.dataset.value.length, element.dataset.value.length);
+  };
+  const inputElements = document.querySelectorAll('.percent_mask input');
+  inputElements.forEach((input) => {
+    input.addEventListener('keyup', (e) => {
+      if (bypass.indexOf(e.keyCode) !== -1) return;
+
+      const pure = pureValue(input);
+      saveValue(input, pure);
+
+      if (!pure) {
+        input.value = '';
+        return;
+      }
+      input.value = pure + suffix;
+      focusNumber(input);
+    });
+  });
+}
+prefix_percent('me');
+
+
+
+
+
+
+
+
+
+function prefix_value() {
+  const prefix = 'R$';
+  const bypass = [9, 16, 17, 18, 36, 37, 38, 39, 40, 91, 92, 93];
+
+  const saveValue = (element, data) => {
+    element.dataset.value = data;
+  };
+
+  const formatValue = (value) => {
+    const stringValue = value.toString().replace(/\D/g, ''); // Remove caracteres não numéricos
+    const numericValue = parseFloat(stringValue) / 100; // Divide por 100 para tratar centavos
+    return numericValue.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+  };
+
+  // Seleciona todos os elementos de entrada dentro da classe .valor_mask input
+  const inputElements = document.querySelectorAll('.valor_mask input');
+
+  // Itera sobre os elementos de entrada e aplica a lógica da função mask a cada um
+  inputElements.forEach((input) => {
+    input.addEventListener('keyup', (e) => {
+      if (bypass.indexOf(e.keyCode) !== -1) return;
+
+      const formattedValue = formatValue(input.value);
+      saveValue(input, formattedValue);
+
+      input.value = formattedValue;
+    });
+  });
+}
+
+// Chama a função mask para aplicar a lógica a todos os campos de entrada dentro de .valor_mask input
+prefix_value();
 
 
 

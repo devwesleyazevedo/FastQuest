@@ -24,40 +24,41 @@
                      <hr>
                      <p><b>Texto alternativo:</b></p>
                   </div>
-                  <div class="d-flex flex-wrap somatoria">
-                     <div class="mb-3 col-md-4 col-12">
-                        <div class="m-2"></div>
-                        <label for="padariaMoeda" class="form-label">Padaria</label>
-                        <input type="number" class="form-control" id="padariaMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
+                  <div class="d-flex flex-wrap somatoria valor_mask">
+                     <div class="mb-3 col-md-6 col-12">
+                        <div class="m-2 input_d_flex">
+                           <label for="padariaMoeda" class="form-label">Padaria</label>
+                           <input type="text" class="form-control money-input" id="padariaMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
+                        </div>
                      </div>
-                     <div class="mb-3 col-md-4 col-12">
-                        <div class="m-2">
+                     <div class="mb-3 col-md-6 col-12">
+                        <div class="m-2 input_d_flex">
                            <label for="mercadoMoeda" class="form-label">Mercado</label>
-                           <input type="number" class="form-control" id="mercadoMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
+                           <input type="text" class="form-control money-input" id="mercadoMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
                         </div>
                      </div>
-                     <div class="mb-3 col-md-4 col-12">
-                        <div class="m-2">
+                     <div class="mb-3 col-md-6 col-12">
+                        <div class="m-2 input_d_flex">
                            <label for="postoMoeda" class="form-label">Posto de Gasolina</label>
-                           <input type="number" class="form-control" id="postoMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
+                           <input type="text" class="form-control money-input" id="postoMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
                         </div>
                      </div>
-                     <div class="mb-3 col-md-4 col-12">
-                        <div class="m-2">
+                     <div class="mb-3 col-md-6 col-12">
+                        <div class="m-2 input_d_flex">
                            <label for="farmaciaMoeda" class="form-label">Farmácia</label>
-                           <input type="number" class="form-control" id="farmaciaMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
+                           <input type="text" class="form-control money-input" id="farmaciaMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
                         </div>
                      </div>
-                     <div class="mb-3 col-md-4 col-12">
-                        <div class="m-2">
+                     <div class="mb-3 col-md-12 col-12">
+                        <div class="m-2 input_d_flex">
                            <label for="outrosMoeda" class="form-label">Outros</label>
-                           <input type="number" class="form-control" id="outrosMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
+                           <input type="text" class="form-control money-input" id="outrosMoeda" placeholder="R$ 0" min="0" step="0.01" oninput="calcularSomaMoeda()">
                         </div>
                      </div>
-                     <div class="mb-3 col-md-4 col-12 text-center resultado">
+                     <div class="mb-3 col-md-12 col-12 text-center resultado">
                         <div class="m-2">
-                           <label for="somaMoeda" class="form-label">Resultado</label>
-                           <input type="text" class="form-control text-center" id="somaMoeda" placeholder="R$ 0" readonly>
+                           <label for="total" class="form-label">Resultado</label>
+                           <input type="text" id="total" class="form-control text-center total-display" placeholder="0%" disabled />
                         </div>
                      </div>
                   </div>
