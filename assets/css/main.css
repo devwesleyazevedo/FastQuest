@@ -1144,8 +1144,19 @@ textarea.form-control {
 .bankmobile .col-2 {
 	display: none;
 }
+.bankmobile .col-12 {
+	display: none;
+}
+
+.bankmobile p {
+	display: none;
+}
+
 
 .bankmobile .col-2 img {
+	width: 35px;
+}
+.bankmobile .col-12 img {
 	width: 35px;
 }
 
@@ -1153,11 +1164,19 @@ textarea.form-control {
 	.bank-header {
 		display: none !important;
 	}
-
+	.bankmobile {
+		margin-top: 20px;
+	}
 	.bankmobile .col-2 {
 		display: block;
 	}
-
+	.bankmobile .col-12{
+		display: block;
+	}
+	.bankmobile p {
+		display: block;
+		font-weight: 600;
+	}
 	.col-table-flex .item-table .opcoes.opcoesbank {
 		margin-top: 0;
 	}
