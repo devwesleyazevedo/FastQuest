@@ -1147,7 +1147,9 @@ textarea.form-control {
 .bankmobile .col-12 {
 	display: none;
 }
-
+.opcoes.opcoesbank.bankgrid p {
+	display: none;
+}
 .bankmobile p {
 	display: none;
 }
@@ -1180,7 +1182,6 @@ textarea.form-control {
 	.col-table-flex .item-table .opcoes.opcoesbank {
 		margin-top: 0;
 	}
-
 	.col-table-flex .item-table .opcoes.opcoesbank b {
 		font-weight: bold;
 		font-size: 20px;
@@ -1195,6 +1196,13 @@ textarea.form-control {
 	}
 	.input_d_flex label {
 		width: 100%;
+	}
+	.opcoes.opcoesbank.bankgrid{
+		display: grid !important;
+		grid-template-columns: 1fr;
+	}
+	.opcoes.opcoesbank.bankgrid p{
+		display: block;
 	}
 }
 
