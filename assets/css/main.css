@@ -729,6 +729,29 @@ fieldset input.form-control {
 	opacity: 1;
 }
 
+.checkboxbanco  {
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+.checkboxbanco  img{
+	max-height: 35px;
+    object-fit: cover;
+}
+
+.checkboxbanco .inputGroup label {
+	border-radius: 0;
+	min-height: 107px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 5px solid #fff;
+}
+
+.checkboxbanco .inputGroup label:after {
+	display: none;
+}
 
 
 
@@ -876,6 +899,10 @@ fieldset input.form-control {
 
 	.container-agrupamento p {
 		font-size: 18px;
+	}
+	.checkboxbanco  {
+		margin-bottom: 30px;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
