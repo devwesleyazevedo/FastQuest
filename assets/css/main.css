@@ -775,27 +775,82 @@ fieldset input.form-control {
 	margin-right: 2px;
 }
 
+#modalgondola .modal-content .modal-body {
+	padding: 0;
+}
+
+#modalgondola .modal-content {
+	width: auto;
+}
 
 .container-imagem label img {
-	pointer-events: none;
 	display: inline !important;
 	width: 100%;
-	border-radius: 16px;
+	border-radius: 0;
 }
 
 
 .container-imagem label {
-	padding: 3px;
+	padding: 0px;
+	border-radius: 0;
+	overflow: initial;
+	border: 5px solid #fff;
 }
 
 .container-agrupamento .inputGroup label:after {
+    top: initial;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateY(0);
+}
+
+
+.container-agrupamento .inputGroup .icon_lupa {
+	width: 30px;
+	height: 30px;
+	position: absolute;
 	left: 0;
 	right: 0;
+	top: 0;
+	bottom: 0;
 	margin-right: auto;
 	margin-left: auto;
-	bottom: 0;
-	top: initial;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 50;
+	opacity: 0;
+	transition: .5s;
 }
+
+.container-agrupamento .inputGroup label:hover .icon_lupa {
+	opacity: 1;
+}
+
+
+
+
+
+
+.container-agrupamento.inputGroup label:before {
+	transition: .5s;
+}
+
+.container-agrupamento .inputGroup label:hover:before {
+	opacity: 0.5;
+	z-index: 1;
+	background-color: #000000;
+}
+
+
+
+
+
+
+
+
 
 
 .container-agrupamento .inputGroup input:checked~label img {
@@ -805,7 +860,7 @@ fieldset input.form-control {
 .container-agrupamento p {
 	background-color: #ededed;
 	border-radius: 10px;
-	margin: 0 5px;
+	margin: 10px 5px;
 	font-size: 13px;
 }
 
