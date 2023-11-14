@@ -731,7 +731,7 @@ fieldset input.form-control {
 
 .checkboxbanco  {
 	display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     gap: 10px;
 }
 .checkboxbanco  img{
