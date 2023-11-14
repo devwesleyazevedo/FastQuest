@@ -494,3 +494,38 @@ document.querySelectorAll('.bi-zoom-in').forEach(function(element) {
       document.getElementById('modalImage').src = imageSrc;
   });
 });                 
+
+
+
+
+
+         // Adicione um listener de evento de clique para cada botão de rádio em cada accordion
+         var accordions = document.querySelectorAll('.accordion-item');
+         accordions.forEach(function(accordion, index) {
+           var radios = accordion.querySelectorAll('input[type="radio"]');
+           radios.forEach(function(radio) {
+             radio.onclick = function() {
+               // Quando um botão de rádio é clicado, exiba o valor na span correspondente ao accordion
+               var accordionTitle = accordion.querySelector('.accordion-button span');
+               var resultadoDiv = accordionTitle.querySelector('.resultado');
+         
+               // Crie ou atualize o conteúdo da div com a classe "resultado"
+               if (!resultadoDiv) {
+                 resultadoDiv = document.createElement('div');
+                 resultadoDiv.className = 'resultado';
+                 accordionTitle.appendChild(resultadoDiv);
+               }
+         
+               resultadoDiv.innerText = 'Opção selecionada: ' + this.value;
+         
+               // Feche o accordion atual
+               accordion.classList.remove('show');
+         
+               // Abra o próximo accordion, se existir
+               var nextAccordion = accordions[index + 1];
+               if (nextAccordion) {
+                 nextAccordion.classList.add('show');
+               }
+             };
+           });
+         });

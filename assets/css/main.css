@@ -1534,6 +1534,47 @@ label {
 .accordion-button::after {
 	color: #fff;
 }
+.accordion-header span{
+	font-size: 18px;
+}
+
+.accordion .resultado {
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 700px) {
+	.accordion .inputGroup {
+		padding-left: 0;
+		font-size: 13px;
+	}
+
+.accordion-header span{
+	font-size: 15px;
+}
+
+.accordion .resultado {
+	font-size: 13px;
+}
+.accordion .inputGroup label {
+	padding: 15px 8px;
+}
+.accordion .inputGroup label:after {
+	width: 22px;
+	height: 22px;
+	right: 5px;
+}
+
+}
+
+
+
 
 /*TEXTAREA*/
 textarea.form-control {

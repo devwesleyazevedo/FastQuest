@@ -23,158 +23,214 @@
                      <hr>
                      <p><b>Texto alternativo:</b> Marque todos</p>
                   </div>
-                  <div class="accordion accordion-flush" id="accordionRobots">
+                  <!-- Accordion -->
+                  <div class="accordion accordion-flush" id="accordionExample">
+                     <!-- Accordion Item 1 -->
                      <div class="accordion-item">
-                        <h2 id="accordionHeadingFutebol" class="accordion-header">
-                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseFutebol" aria-expanded="true" aria-controls="accordionCollapseFutebol">
-                           Futebol
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           <span id="titleOne">Futebol</span>
                            </button>
                         </h2>
-                        <div id="accordionCollapseFutebol" class="accordion-collapse collapse" aria-labelledby="accordionHeadingFutebol" data-bs-parent="#accordionRobots">
-                           <div class="accordion-body ps-4">
-                              <div class="inputGroup">
-                                 <input id="futebolRadio01" name="futebolConcordanciaRadio" type="radio" value="Não sei nada" required/>
-                                 <label for="futebolRadio01">Não sei nada</label>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup1" id="radio1a" value="Não sei nada"  data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                 <label class="form-check-label" for="radio1a">
+                                 Não sei nada
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="futebolRadio02" name="futebolConcordanciaRadio" type="radio" value="Vi 1 ou 2 vezes" required/>
-                                 <label for="futebolRadio02">Vi 1 ou 2 vezes</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup1" id="radio1b" value="Vi 1 ou 2 vezes"  data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                 <label class="form-check-label" for="radio1b">
+                                 Vi 1 ou 2 vezes
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="futebolRadio03" name="futebolConcordanciaRadio" type="radio" value="Vejo às vezes/ conheço alguns poucos atletas" required/>
-                                 <label for="futebolRadio03">Vejo às vezes/ conheço alguns poucos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup1" id="radio1c" value="Vejo às vezes/ conheço alguns poucos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                 <label class="form-check-label" for="radio1c">
+                                 Vejo às vezes/ conheço alguns poucos atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="futebolRadio04" name="futebolConcordanciaRadio" type="radio" value="Vejo/ conheço atletas" required/>
-                                 <label for="futebolRadio04">Vejo/ conheço atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup1" id="radio1c" value="Vejo/ conheço atletas"  data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                 <label class="form-check-label" for="radio1d">
+                                 Vejo/ conheço atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="futebolRadio05" name="futebolConcordanciaRadio" type="radio" value="Acompanho sempre/ conheço a maioria dos atletas" required/>
-                                 <label for="futebolRadio05">Acompanho sempre/ conheço a maioria dos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup1" id="radio1c" value="Acompanho sempre/ conheço a maioria dos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                 <label class="form-check-label" for="radio1e">
+                                 Acompanho sempre/ conheço a maioria dos atletas
+                                 </label>
                               </div>
                            </div>
                         </div>
                      </div>
+                     <!-- Accordion Item 2 -->
                      <div class="accordion-item">
-                        <h2 id="accordionHeadingBasquete" class="accordion-header">
-                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseBasquete" aria-expanded="false" aria-controls="accordionCollapseBasquete">
-                           Basquete
+                        <h2 class="accordion-header" id="headingTwo">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           <span id="titleTwo">Basquete</span>
                            </button>
                         </h2>
-                        <div id="accordionCollapseBasquete" class="accordion-collapse collapse" aria-labelledby="accordionHeadingBasquete" data-bs-parent="#accordionRobots">
-                           <div class="accordion-body ps-4">
-                              <div class="inputGroup">
-                                 <input id="basqueteRadio01" name="basqueteConcordanciaRadio" type="radio" value="Não sei nada" required/>
-                                 <label for="basqueteRadio01">Não sei nada</label>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup2" id="radio2a" value="Não sei nada"  data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                 <label class="form-check-label" for="radio2a">
+                                 Não sei nada
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="basqueteRadio02" name="basqueteConcordanciaRadio" type="radio" value="Vi 1 ou 2 vezes" required/>
-                                 <label for="basqueteRadio02">Vi 1 ou 2 vezes</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup2" id="radio2b" value="Vi 1 ou 2 vezes"  data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                 <label class="form-check-label" for="radio2b">
+                                 Vi 1 ou 2 vezes
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="basqueteRadio03" name="basqueteConcordanciaRadio" type="radio" value="Vejo às vezes/ conheço alguns poucos atletas" required/>
-                                 <label for="basqueteRadio03">Vejo às vezes/ conheço alguns poucos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup2" id="radio2c" value="Vejo às vezes/ conheço alguns poucos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                 <label class="form-check-label" for="radio2c">
+                                 Vejo às vezes/ conheço alguns poucos atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="basqueteRadio04" name="basqueteConcordanciaRadio" type="radio" value="Vejo/ conheço atletas" required/>
-                                 <label for="basqueteRadio04">Vejo/ conheço atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup2" id="radio2d" value="Vejo/ conheço atletas"  data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                 <label class="form-check-label" for="radio2d">
+                                 Vejo/ conheço atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="basqueteRadio05" name="basqueteConcordanciaRadio" type="radio" value="Acompanho sempre/ conheço a maioria dos atletas" required/>
-                                 <label for="basqueteRadio05">Acompanho sempre/ conheço a maioria dos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup2" id="radio2e" value=" Acompanho sempre/ conheço a maioria dos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                 <label class="form-check-label" for="radio2e">
+                                 Acompanho sempre/ conheço a maioria dos atletas
+                                 </label>
                               </div>
                            </div>
                         </div>
                      </div>
+                     <!-- Accordion Item 3 -->
                      <div class="accordion-item">
-                        <h2 id="accordionHeadingVolei" class="accordion-header">
-                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseVolei" aria-expanded="false" aria-controls="accordionCollapseVolei">
-                           Vôlei
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <span id="titleThree">Vôlei</span>
                            </button>
                         </h2>
-                        <div id="accordionCollapseVolei" class="accordion-collapse collapse" aria-labelledby="accordionHeadingVolei" data-bs-parent="#accordionRobots">
-                           <div class="accordion-body ps-4">
-                              <div class="inputGroup">
-                                 <input id="voleiRadio01" name="voleiConcordanciaRadio" type="radio" value="Não sei nada" required/>
-                                 <label for="voleiRadio01">Não sei nada</label>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup3" id="radio3a" value="Não sei nada"  data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                 <label class="form-check-label" for="radio3a">
+                                 Não sei nada
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="voleiRadio02" name="voleiConcordanciaRadio" type="radio" value="Vi 1 ou 2 vezes" required/>
-                                 <label for="voleiRadio02">Vi 1 ou 2 vezes</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup3" id="radio3b" value="Vi 1 ou 2 vezes"  data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                 <label class="form-check-label" for="radio3b">
+                                 Vi 1 ou 2 vezes
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="voleiRadio03" name="voleiConcordanciaRadio" type="radio" value="Vejo às vezes/ conheço alguns poucos atletas" required/>
-                                 <label for="voleiRadio03">Vejo às vezes/ conheço alguns poucos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup3" id="radio3c" value="Vejo às vezes/ conheço alguns poucos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                 <label class="form-check-label" for="radio3c">
+                                 Vejo às vezes/ conheço alguns poucos atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="voleiRadio04" name="voleiConcordanciaRadio" type="radio" value="Vejo/ conheço atletas" required/>
-                                 <label for="voleiRadio04">Vejo/ conheço atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup3" id="radio3d" value="Vejo/ conheço atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                 <label class="form-check-label" for="radio3d">
+                                 Vejo/ conheço atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="voleiRadio05" name="voleiConcordanciaRadio" type="radio" value="Acompanho sempre/ conheço a maioria dos atletas" required/>
-                                 <label for="voleiRadio05">Acompanho sempre/ conheço a maioria dos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup3" id="radio3e" value="Acompanho sempre/ conheço a maioria dos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                 <label class="form-check-label" for="radio3e">
+                                 Acompanho sempre/ conheço a maioria dos atletas
+                                 </label>
                               </div>
                            </div>
                         </div>
                      </div>
+                     <!-- Accordion Item 4 -->
                      <div class="accordion-item">
-                        <h2 id="accordionHeadingSurf" class="accordion-header">
-                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseSurf" aria-expanded="false" aria-controls="accordionCollapseSurf">
-                           Surf
+                        <h2 class="accordion-header" id="headingFour">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                           <span id="titleFour">Surf</span>
                            </button>
                         </h2>
-                        <div id="accordionCollapseSurf" class="accordion-collapse collapse" aria-labelledby="accordionHeadingSurf" data-bs-parent="#accordionRobots">
-                           <div class="accordion-body ps-4">
-                              <div class="inputGroup">
-                                 <input id="surfRadio01" name="surfConcordanciaRadio" type="radio" value="Não sei nada" required/>
-                                 <label for="surfRadio01">Não sei nada</label>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup4" id="radio4a" value="Não sei nada"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio4a">
+                                 Não sei nada
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="surfRadio02" name="surfConcordanciaRadio" type="radio" value="Vi 1 ou 2 vezes" required/>
-                                 <label for="surfRadio02">Vi 1 ou 2 vezes</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup4" id="radio4b" value="Vi 1 ou 2 vezes"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio4b">
+                                 Vi 1 ou 2 vezes
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="surfRadio03" name="surfConcordanciaRadio" type="radio" value="Vejo às vezes/ conheço alguns poucos atletas" required/>
-                                 <label for="surfRadio03">Vejo às vezes/ conheço alguns poucos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup4" id="radio4c" value="Vejo às vezes/ conheço alguns poucos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio4c">
+                                 Vejo às vezes/ conheço alguns poucos atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="surfRadio04" name="surfConcordanciaRadio" type="radio" value="Vejo/ conheço atletas" required/>
-                                 <label for="surfRadio04">Vejo/ conheço atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup4" id="radio4d" value="Vejo/ conheço atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio4d">
+                                 Vejo/ conheço atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="surfRadio05" name="surfConcordanciaRadio" type="radio" value="Acompanho sempre/ conheço a maioria dos atletas" required/>
-                                 <label for="surfRadio05">Acompanho sempre/ conheço a maioria dos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup4" id="radio4e" value="Acompanho sempre/ conheço a maioria dos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio4e">
+                                 Acompanho sempre/ conheço a maioria dos atletas
+                                 </label>
                               </div>
                            </div>
                         </div>
                      </div>
+                     <!-- Accordion Item 5 -->
                      <div class="accordion-item">
-                        <h2 id="accordionHeadingSkate" class="accordion-header">
-                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseSkate" aria-expanded="false" aria-controls="accordionCollapseSkate">
-                           Skate
+                        <h2 class="accordion-header" id="headingFive">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                           <span id="titleFive">Skate</span>
                            </button>
                         </h2>
-                        <div id="accordionCollapseSkate" class="accordion-collapse collapse" aria-labelledby="accordionHeadingSkate" data-bs-parent="#accordionRobots">
-                           <div class="accordion-body ps-4">
-                              <div class="inputGroup">
-                                 <input id="skateRadio01" name="skateConcordanciaRadio" type="radio" value="Não sei nada" required/>
-                                 <label for="skateRadio01">Não sei nada</label>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup5" id="radio5a" value="Não sei nada"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio5a">
+                                 Não sei nada
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="skateRadio02" name="skateConcordanciaRadio" type="radio" value="Vi 1 ou 2 vezes" required/>
-                                 <label for="skateRadio02">Vi 1 ou 2 vezes</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup5" id="radio5b" value="Vi 1 ou 2 vezes"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio5b">
+                                 Vi 1 ou 2 vezes
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="skateRadio03" name="skateConcordanciaRadio" type="radio" value="Vejo às vezes/ conheço alguns poucos atletas" required/>
-                                 <label for="skateRadio03">Vejo às vezes/ conheço alguns poucos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup5" id="radio5c" value="Vejo às vezes/ conheço alguns poucos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio5c">
+                                 Vejo às vezes/ conheço alguns poucos atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="skateRadio04" name="skateConcordanciaRadio" type="radio" value="Vejo/ conheço atletas" required/>
-                                 <label for="skateRadio04">Vejo/ conheço atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup5" id="radio5d" value="Vejo/ conheço atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio5d">
+                                 Vejo/ conheço atletas
+                                 </label>
                               </div>
-                              <div class="inputGroup">
-                                 <input id="skateRadio05" name="skateConcordanciaRadio" type="radio" value="Acompanho sempre/ conheço a maioria dos atletas" required/>
-                                 <label for="skateRadio05">Acompanho sempre/ conheço a maioria dos atletas</label>
+                              <div class="form-check inputGroup">
+                                 <input class="form-check-input" type="radio" name="radioGroup5" id="radio5e" value="Acompanho sempre/ conheço a maioria dos atletas"  data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                 <label class="form-check-label" for="radio5e">
+                                 Acompanho sempre/ conheço a maioria dos atletas
+                                 </label>
                               </div>
                            </div>
                         </div>
