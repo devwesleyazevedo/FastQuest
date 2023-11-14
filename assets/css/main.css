@@ -996,6 +996,10 @@ label {
 	border: none;
 }
 
+.accordion.accordion-flush .accordion-item .inputGroup input:checked~label{
+	color: #000;
+}
+
 .accordion-button::after {
 	color: #fff;
 }
@@ -1487,4 +1491,11 @@ textarea.form-control {
 		width: 100%;
 		;
 	}
+}
+
+.considero_or_not .inputGroup input:checked~label {
+color: #000;
+}
+.considero_or_not img {
+	max-width: 100px;
 }
