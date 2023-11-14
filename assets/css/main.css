@@ -804,76 +804,101 @@ fieldset input.form-control {
 
 
 
-.classLabel.checked{
+#recompensacheckbox .classLabel.checked{
 	border-color:#00b0a9 !important;
 	background-color: #fbec5d !important;
 	}
-	.lista-atributo div{
-	display:flex;
-	font-size:14px !important;
-	padding:5px;
-	align-items: center;
-	justify-content: center;
-	}
-	.lista-atributo{
-	margin-top:0px !important;
-	border:solid 1px #ccc;
-	min-height: 615px;
-	}
-	.font-bold{
-	font-weight:bold;
-	}
-	.dv_campo00{
-	min-height: 50px !important;
-	}
 
-	.dv_campo00 span{
+	#recompensacheckbox .lista-atributo div {
+		display: flex;
+		font-size: 14px !important;
+		padding: 5px;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	#recompensacheckbox .lista-atributo {
+		margin-top: 0px !important;
+		border: solid 1px #ccc;
+		min-height: 615px;
+	}
+	
+	#recompensacheckbox .font-bold {
+		font-weight: bold;
+	}
+	
+	#recompensacheckbox .dv_campo00 {
+		min-height: 50px !important;
+	}
+	
+	#recompensacheckbox .dv_campo00 span {
 		border-radius: 10px;
 		padding: 5px 15px;
 		color: #fff;
 	}
-
-	.x-check:nth-child(2) .dv_campo00 span{
+	
+	#recompensacheckbox .x-check:nth-child(2) .dv_campo00 span {
 		background-color: #39b0aa;
 	}
-	.x-check:nth-child(3) .dv_campo00 span{
+	
+	#recompensacheckbox .x-check:nth-child(3) .dv_campo00 span {
 		background-color: #203864;
 	}
-	.x-check:nth-child(4) .dv_campo00 span{
+	
+	#recompensacheckbox .x-check:nth-child(4) .dv_campo00 span {
 		background-color: #39b0aa;
 	}
-	.x-check:nth-child(5) .dv_campo00 span{
+	
+	#recompensacheckbox .x-check:nth-child(5) .dv_campo00 span {
 		background-color: #FF001E;
 	}
-
-
-
-	.dv_campo01{
-	min-height: 100px !important;
-	background-color:#f1f1f1 !important;
+	
+	#recompensacheckbox .dv_campo01 {
+		min-height: 100px !important;
+		background-color: #f1f1f1 !important;
 	}
-	.dv_campo02{
-	min-height: 60px !important;
+	
+	#recompensacheckbox .dv_campo02 {
+		min-height: 60px !important;
 	}
-	.dv_campo03{
-	min-height: 60px !important;
-	background-color:#f1f1f1 !important;
+	
+	#recompensacheckbox .dv_campo03 {
+		min-height: 60px !important;
+		background-color: #f1f1f1 !important;
 	}
-	.dv_campo04{
-	min-height: 100px !important;
+	
+	#recompensacheckbox .dv_campo04 {
+		min-height: 100px !important;
 	}
-	.dv_campo05{
-	min-height: 100px !important;
-	background-color:#f1f1f1 !important;
+	
+	#recompensacheckbox .dv_campo05 {
+		min-height: 100px !important;
+		background-color: #f1f1f1 !important;
 	}
-	.dv_campo06{
-	min-height: 60px !important;
+	
+	#recompensacheckbox .dv_campo06 {
+		min-height: 60px !important;
 	}
-	.dv_campo07{
-	min-height: 60px !important;
-	background-color:#f1f1f1 !important;
+	
+	#recompensacheckbox .dv_campo07 {
+		min-height: 60px !important;
+		background-color: #f1f1f1 !important;
 	}
-	.classLabel.checked { background-color: white !important; }.classLabel.checked .lista-atributo{ border: 4px solid rgb(59, 136, 206) !important }.classLabel.hover .lista-atributo{ border: 4px solid rgb(59, 136, 206) !important }
+	
+	#recompensacheckbox.checked {
+		background-color: white !important;
+	}
+	
+	#recompensacheckbox.checked .lista-atributo {
+		border: 4px solid rgb(59, 136, 206) !important;
+	}
+	
+	#recompensacheckbox.hover .lista-atributo {
+		border: 4px solid rgb(59, 136, 206) !important;
+	}
+	
 
 
 
@@ -886,6 +911,180 @@ fieldset input.form-control {
 
 
 
+
+
+
+
+
+
+
+
+.pedidocheckbox_class {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	gap: 10px;
+}
+
+.pedidocheckbox_class label{
+	border-radius: 0;
+	padding: 0;
+	border: 5px solid #fff;
+  }
+
+  .pedidocheckbox_class label:before, .pedidocheckbox_class label:after {
+	display: none;
+  }
+
+  .pedidocheckbox_class .x-check input:checked~label {
+	color: #000;
+}
+
+.pedidocheckbox_class .x-check {
+	width: 100% !important;
+  }
+
+	#pedidocheckbox .row > div:nth-of-type(6) {
+		width: 10% !important;
+	}
+
+	#pedidocheckbox .lista-atributo {
+		margin-top: 0px !important;
+		border: solid 1px #ccc;
+	}
+	
+	#pedidocheckbox .lista-atributo.checked {
+		border: 4px solid rgb(59, 136, 206) !important;
+	}
+	
+	#pedidocheckbox .lista-atributo.checked img {
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	
+	#pedidocheckbox .row > div:nth-of-type(6) > div > label > .lista-atributo {
+		background: #f1f1f1;
+	}
+	
+	#pedidocheckbox .logo {
+		width: auto;
+		height: auto;
+		max-width: 120px;
+		max-height: 100px;
+	}
+	
+	#pedidocheckbox .total {
+		width: auto;
+		height: 30px;
+		max-width: 120px;
+		max-height: 100px;
+		padding-left: 5px;
+	}
+	
+	#pedidocheckbox .lista-atributo div {
+		display: block;
+		font-size: 14px !important;
+		padding: 5px;
+	}
+
+	#pedidocheckbox .lista-atributo div p{
+		font-size: 15px !important;
+	}
+	
+	#pedidocheckbox .lista-atributo {
+		margin-top: 0px !important;
+		border: solid 1px #ccc;
+		/*padding:25px !Important;*/
+	}
+	
+	#pedidocheckbox .font-bold {
+		font-weight: bold;
+	}
+	
+	#pedidocheckbox .dv_campo00 {
+		min-height: 60px !important;
+	}
+	
+	#pedidocheckbox .dv_campo01 {
+		min-height: 120px !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox .dv_campo02 {
+		min-height: 40px !important;
+		background-color: #f1f1f1 !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox .dv_campo03 {
+		min-height: 60px !important;
+		background-color: #e3e3e3 !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox .dv_campo04 {
+		min-height: 100px !important;
+		background-color: #f1f1f1 !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox .dv_campo05 {
+		min-height: 75px !important;
+		background-color: #e3e3e3 !important;
+		text-align: left !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox .dv_campo06 {
+		min-height: 20px !important;
+		background-color: #ffffff !important;
+		text-align: left !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox .dv_campo07 {
+		min-height: 40px !important;
+		background-color: #c1c8cf !important;
+		text-align: left !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox .dv_campo08 {
+		min-height: 40px !important;
+		background-color: #c1c8cf !important;
+		text-align: left !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox .dv_campo09 {
+		min-height: 40px !important;
+		background-color: #c1c8cf !important;
+		text-align: left !important;
+		text-align: center !important;
+	}
+	
+	#pedidocheckbox small {
+		font-size: 13px;
+		font-weight: 800;
+		color: #000;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
@@ -928,6 +1127,10 @@ fieldset input.form-control {
 		margin-bottom: 30px;
 	}
 	.checkrecompensa_grid{
+		display: flex;
+		flex-direction: column;
+	  }
+	  .pedidocheckbox_class{
 		display: flex;
 		flex-direction: column;
 	  }

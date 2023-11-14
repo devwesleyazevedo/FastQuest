@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FastQuest</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://vjs.zencdn.net/7.16.0/video-js.css" rel="stylesheet">
+      <link rel="stylesheet" href="./assets/css/main.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row justify-content-center align-items-center  min-vh-100">
+            <!-- Formulário  -->
+            <form id="idform" class="p-3 p-md-4 p-lg-5 rounded">
+               <!-- Logo -->
+               <img class="logo d-flex mx-auto mb-5" src="./assets/img/logo.png" alt="">
+               <!-- Logo -->
+               <!-- Seção checkbox Pedido -->
+               <fieldset>
+                  <div class="mb-3">
+                     <h1>Questão tipo RM com colunas e com selecionador</h1>
+                     <h2>Pensando agora que você realizou um pedido de uma Pizza Média, meio a meio na Pizza Hut – Massa PAN por R$41,90, em um aplicativo de delivery de comida e você mora a 4km de distância do local, escolha a opção que você considera mais atrativa (ideal):</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Você pode selecionar,um, ou nehuma opção.</p>
+                  </div>
+                  <div id="pedidocheckbox" class="corpoQuestao">
+                     <div class="panel-body" style="display: block;">
+                        <div class="row pedidocheckbox_class">
+                           <div class="x-check inputGroup omite-selecionador" style="padding: 5px 5px 5px 5px; float: left; width: 19%;">
+                              <input type="radio" name="Questao@rdio@90817" value="0" disabled=""> 
+                              <label class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo font-bold">
+                                    <div class="dv_campo00"> </div>
+                                    <div class="dv_campo01">Marca </div>
+                                    <div class="dv_campo02">Gorjeta </div>
+                                    <div class="dv_campo03" style="min-height: 0px !important">Taxa Fixa </div>
+                                    <div class="dv_campo04" style="min-height: 0px !important; padding-top: 38.5px; padding-bottom: 38.5px;">Taxa por KM </div>
+                                    <div class="dv_campo05" style="min-height: 0px !important; padding-top: 16px; padding-bottom: 16px;">Taxa por Alta Demanda </div>
+                                    <div class="dv_campo07">Total Taxas </div>
+                                    <div class="dv_campo08">Total Compra </div>
+                                    <div class="dv_campo09">Total Pedido</div>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="x-check inputGroup omite-selecionador checked" style="padding: 5px 5px 5px 5px; float: left; width: 19%;">
+                              <input id="input01" type="radio" name="Questao@rdio@90817" value="1"> 
+                              <label for="input01" class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo" style="border: 1px solid rgb(204, 204, 204);">
+                                    <div class="dv_campo00"></div>
+                                    <div class="dv_campo01"><img class="logo" src="/assets/img/rappi-logo.png" style=""></div>
+                                    <div class="dv_campo02">R$ 0,00</div>
+                                    <div class="dv_campo03" style="min-height: 0px !important">Isento</div>
+                                    <div class="dv_campo04" style="min-height: 0px !important">
+                                       <p class="mb-0">0 - 3 km = R$4,00</p>
+                                       <p class="mb-0"><b>3 - 5 km = R$6,00</b></p>
+                                       <p class="mb-0"> 5 km ou mais = R$10,00</p>
+                                       <p class="mb-0"><small>(Taxa fixa / distância)</small></p>
+                                    </div>
+                                    <div class="dv_campo05" style="min-height: 0px !important">
+                                       <p class="mb-0">R$2,00</p>
+                                       <small>(Acréscimo de taxa)</small>
+                                    </div>
+                                    <div class="dv_campo07"><b>R$ 8,00</b> </div>
+                                    <div class="dv_campo08"><b>R$ 41,90</b> </div>
+                                    <div class="dv_campo09"><b>R$ 49,90</b> </div>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="x-check inputGroup omite-selecionador" style="padding: 5px 5px 5px 5px; float: left; width: 19%;">
+                              <input id="input02" type="radio" name="Questao@rdio@90817" value="2"> 
+                              <label for="input02" class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo" style="border: 1px solid rgb(204, 204, 204);">
+                                    <div class="dv_campo00"></div>
+                                    <div class="dv_campo01"><img class="logo" src="/assets/img/rappi-logo.png" style=""></div>
+                                    <div class="dv_campo02">R$ 0,00</div>
+                                    <div class="dv_campo03" style="min-height: 0px !important">Isento</div>
+                                    <div class="dv_campo04" style="min-height: 0px !important">
+                                       <p class="mb-0">0 - 3 km = R$4,00</p>
+                                       <p class="mb-0"><b>3 - 5 km = R$6,00</b></p>
+                                       <p class="mb-0"> 5 km ou mais = R$10,00</p>
+                                       <p class="mb-0"><small>(Taxa fixa / distância)</small></p>
+                                    </div>
+                                    <div class="dv_campo05" style="min-height: 0px !important">
+                                       <p class="mb-0">R$2,00</p>
+                                       <small>(Acréscimo de taxa)</small>
+                                    </div>
+                                    <div class="dv_campo07"><b>R$ 8,00</b> </div>
+                                    <div class="dv_campo08"><b>R$ 41,90</b> </div>
+                                    <div class="dv_campo09"><b>R$ 49,90</b> </div>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="x-check inputGroup omite-selecionador" style="padding: 5px 5px 5px 5px; float: left; width: 19%;">
+                              <input id="input03" type="radio" name="Questao@rdio@90817" value="3"> 
+                              <label for="input03" class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo" style="border: 1px solid rgb(204, 204, 204);">
+                                    <div class="dv_campo00"></div>
+                                    <div class="dv_campo01"><img class="logo" src="/assets/img/rappi-logo.png" style=""></div>
+                                    <div class="dv_campo02">R$ 0,00</div>
+                                    <div class="dv_campo03" style="min-height: 0px !important">Isento</div>
+                                    <div class="dv_campo04" style="min-height: 0px !important">
+                                       <p class="mb-0">0 - 3 km = R$4,00</p>
+                                       <p class="mb-0"><b>3 - 5 km = R$6,00</b></p>
+                                       <p class="mb-0"> 5 km ou mais = R$10,00</p>
+                                       <p class="mb-0"><small>(Taxa fixa / distância)</small></p>
+                                    </div>
+                                    <div class="dv_campo05" style="min-height: 0px !important">
+                                       <p class="mb-0">R$2,00</p>
+                                       <small>(Acréscimo de taxa)</small>
+                                    </div>
+                                    <div class="dv_campo07"><b>R$ 8,00</b> </div>
+                                    <div class="dv_campo08"><b>R$ 41,90</b> </div>
+                                    <div class="dv_campo09"><b>R$ 49,90</b> </div>
+                                 </div>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="row"></div>
+                     </div>
+                  </div>
+                  <p class="mt-3"><b>Rodapé:</b> Anotar todas as que se aplicam</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção checkbox Pedido -->
+            </form>
+            <!-- Formulário  -->
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://vjs.zencdn.net/7.16.0/video.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-c0d55073-619e-7a22-c32e-c595747ed250" crossorigin></script>
+      <script src="./assets/js/script.js"></script>
+   </body>
+</html>
