@@ -478,3 +478,19 @@ function applyMask(input, type) {
 
   input.value = maskedValue;
 }
+
+
+
+
+
+
+
+
+
+// Modal checkbox
+document.querySelectorAll('.bi-zoom-in').forEach(function(element) {
+  element.addEventListener('click', function() {
+      var imageSrc = this.parentElement.nextElementSibling.src;
+      document.getElementById('modalImage').src = imageSrc;
+  });
+});                 

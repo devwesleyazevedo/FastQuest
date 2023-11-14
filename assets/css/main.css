@@ -638,20 +638,6 @@ fieldset input.form-control {
 .escala0a10 .inputGroup:nth-child(11) input:checked + label {
     background-color: rgba(54, 197, 71, 1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width: 700px) {
 	.escala0a10 label {
 		padding: 10px 0;
@@ -663,13 +649,27 @@ fieldset input.form-control {
 	}
 }
 
+
+
+
+
+
+
+
+
 /*CHECKBOX IMAGENS*/
+.checkboximagens  { 
+	margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 .checkboximagens .inputGroup label {
 	padding: 0px;
+	overflow: initial;
+	border: 5px solid #fff;
 }
 
 .checkboximagens .inputGroup label {
-	max-height: 260px;
 	border-radius: 0;
 }
 
@@ -680,31 +680,72 @@ fieldset input.form-control {
 
 
 .checkboximagens .inputGroup label:after {
- top: initial;
- bottom: 5px;
- right: 0;
- left: 0;
- margin-right: auto;
- margin-left: auto;
- transform: translateY(0);
+	top: initial;
+	bottom: -18px;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	transform: translateY(0);
+}
+
+.checkboximagens .inputGroup label:before {
+	transition: .5s;
+}
+
+.checkboximagens .inputGroup label:hover:before {
+	opacity: 0.5;
+	z-index: 1;
+	background-color: #000000;
+}
+
+
+.inputGroup input:checked~label {
+    border: 5px solid #54E0C7;
 }
 
 .checkboximagens .inputGroup small {
 	font-size: 18px;
 }
 
+.checkboximagens .inputGroup .icon_lupa {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 50;
+	opacity: 0;
+	transition: .5s;
+}
+
+.checkboximagens .inputGroup label:hover .icon_lupa {
+	opacity: 1;
+}
+
+
+
+
+#modalcheckbox .modal-content {
+	width: auto;
+}
+#modalcheckbox .modal-content .modal-body{
+	padding: 0;
+}
+
 @media(max-width: 700px) {
-	.checkboximagens {
-		display: grid !important;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.checkboximagens .inputGroup label {
-		max-height: 277px;
-	}
-
 	.checkboximagens .inputGroup small {
 		font-size: 18px;
+	}
+	.checkboximagens  { 
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 30px;
 	}
 }
 
