@@ -444,17 +444,103 @@
                   <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
                   <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
                </fieldset>
-               <!-- Modal -->
-               <div class="modal fade" id="modalcheckbox" tabindex="-1" aria-labelledby="modalcheckboxLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg">
-                     <div class="modal-content">
-                        <div class="modal-body">
-                           <img id="modalImage" class="img-fluid mx-auto d-block" src="" alt="">
+               <!-- Seção checkbox imagens bancos -->
+               <!-- Seção checkbox Beneficios -->
+               <fieldset>
+                  <div class="mb-3">
+                     <h1>Questão tipo RM com colunas e com selecionador</h1>
+                     <h2>Por favor olhe com atenção as opções de programa de recompensa abaixo. Qual deles você escolheria para ser seu cartão? (clique na coluna do produto que preferir):</h2>
+                     <hr>
+                     <p><b>Texto alternativo:</b> Você pode selecionar,um, ou nehuma opção.</p>
+                  </div>
+                  <div id="Panel@RU@48507" class="corpoQuestao">
+                     <div class="panel-body" style="display: block;">
+                        <div class="checkrecompensa_grid">
+                           <div class="x-check inputGroup omite-selecionador" >
+                              <input type="radio" name="Questao@rdio@48507" value="0" disabled=""> 
+                              <label class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo font-bold">
+                                    <div class="dv_campo00"> </div>
+                                    <div class="dv_campo01">Cashback </div>
+                                    <div class="dv_campo02">Milhas </div>
+                                    <div class="dv_campo03">Produto que eu gostaria de vincular ao Programa </div>
+                                    <div class="dv_campo04">Funcionamento do programa </div>
+                                    <div class="dv_campo05">Cupons de Desconto </div>
+                                    <div class="dv_campo06">Experiências </div>
+                                    <div class="dv_campo07">Personalização </div>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="x-check inputGroup omite-selecionador checked" >
+                              <input id="input1" type="radio" name="Questao@rdio@48507" value="1"> 
+                              <label for="input1" class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo">
+                                    <div class="dv_campo00">
+                                       <span><b> PRODUTO 1 </b></span>
+                                    </div>
+                                    <div class="dv_campo01">Percentual de Cashback vai aumentando, conforme você gasta mais no cartão</div>
+                                    <div class="dv_campo02">Oferece acúmulo de milhas</div>
+                                    <div class="dv_campo03">Cartão de débito</div>
+                                    <div class="dv_campo04">Quanto mais transações eu faço no banco, mais recompensas eu ganho</div>
+                                    <div class="dv_campo05">Descontos em assinaturas de serviços (Spotify, Netflix, AmazonPrime)</div>
+                                    <div class="dv_campo06">Ingresso grátis para eventos</div>
+                                    <div class="dv_campo07">Possibilita ter um personagem que me represente</div>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="x-check inputGroup omite-selecionador" >
+                              <input id="input2" type="radio" name="Questao@rdio@48507" value="2"> 
+                              <label for="input2" class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo">
+                                    <div class="dv_campo00">
+                                       <span><b> PRODUTO 2 </b></span>
+                                    </div>
+                                    <div class="dv_campo01">Percentual de Cashback vai aumentando, conforme você gasta mais no cartão</div>
+                                    <div class="dv_campo02">Oferece acúmulo de milhas</div>
+                                    <div class="dv_campo03">Seguros</div>
+                                    <div class="dv_campo04">Quanto mais transações eu faço no banco, mais recompensas eu ganho</div>
+                                    <div class="dv_campo05">Descontos em lojas de departamento e supermercados (Americanas, Extra, etc)</div>
+                                    <div class="dv_campo06">Cursos e treinamentos grátis</div>
+                                    <div class="dv_campo07">Não possibilita ter um personagem que me represente</div>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="x-check inputGroup omite-selecionador" >
+                              <input id="input3" type="radio" name="Questao@rdio@48507" value="3"> 
+                              <label for="input3" class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo">
+                                    <div class="dv_campo00">
+                                       <span><b> PRODUTO 3 </b></span>
+                                    </div>
+                                    <div class="dv_campo01">Percentual fixo de Cashback, independente do valor gasto no cartão</div>
+                                    <div class="dv_campo02">Não oferece milhas</div>
+                                    <div class="dv_campo03">Investimentos</div>
+                                    <div class="dv_campo04">Quanto mais eu gasto, mais recompensas eu ganho</div>
+                                    <div class="dv_campo05">Descontos em aplicativos de entrega (Rappi, Ifood, Uber eats)</div>
+                                    <div class="dv_campo06">Ingresso grátis para cinema</div>
+                                    <div class="dv_campo07">Possibilita ter um personagem que me represente</div>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="x-check inputGroup omite-selecionador">
+                              <input id="input4" type="radio" name="Questao@rdio@48507" value="5"> 
+                              <label for="input4" class="classLabel marcacao" style="width: 100%;">
+                                 <div class="lista-atributo font-bold">
+                                    <div class="dv_campo00  d-flex align-items-center justify-content-center">
+                                       <span><b>  NENHUMA OPÇÃO </b></span>
+                                    </div>
+                                 </div>
+                              </label>
+                           </div>
                         </div>
+                        <div class="row"></div>
                      </div>
                   </div>
-               </div>
-               <!-- Seção checkbox imagens bancos -->
+                  <p class="mt-3"><b>Rodapé:</b> Anotar todas as que se aplicam</p>
+                  <button type="button" name="next" class="next action-button" value="Próximo">Próximo</button>
+                  <button type="button" name="previous" class="previous action-button-previous" value="Anterior">Anterior</button>
+               </fieldset>
+               <!-- Seção checkbox Beneficios -->
                <!-- Seção sugestão -->
                <fieldset>
                   <div class="mb-3">

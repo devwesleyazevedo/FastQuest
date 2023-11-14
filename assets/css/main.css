@@ -755,6 +755,163 @@ fieldset input.form-control {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.checkrecompensa_grid{
+	display: grid;
+	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	gap: 10px;
+  }
+  .checkrecompensa_grid label{
+	border-radius: 0;
+	padding: 0;
+	border: 5px solid #fff;
+  }
+
+  .checkrecompensa_grid label:before, .checkrecompensa_grid label:after {
+	display: none;
+  }
+
+  .checkrecompensa_grid .x-check {
+	width: 100% !important;
+  }
+.checkrecompensa_grid .x-check:nth-child(5) {
+	grid-column: span 4;
+}
+.checkrecompensa_grid .x-check:nth-child(5) .lista-atributo{
+	min-height: initial !important;
+}
+
+.checkrecompensa_grid .x-check:nth-child(1) label:after{
+	display: none;
+}
+
+.checkrecompensa_grid .x-check input:checked~label {
+	color: #000;
+}
+
+
+
+
+
+.classLabel.checked{
+	border-color:#00b0a9 !important;
+	background-color: #fbec5d !important;
+	}
+	.lista-atributo div{
+	display:flex;
+	font-size:14px !important;
+	padding:5px;
+	align-items: center;
+	justify-content: center;
+	}
+	.lista-atributo{
+	margin-top:0px !important;
+	border:solid 1px #ccc;
+	min-height: 615px;
+	}
+	.font-bold{
+	font-weight:bold;
+	}
+	.dv_campo00{
+	min-height: 50px !important;
+	}
+
+	.dv_campo00 span{
+		border-radius: 10px;
+		padding: 5px 15px;
+		color: #fff;
+	}
+
+	.x-check:nth-child(2) .dv_campo00 span{
+		background-color: #39b0aa;
+	}
+	.x-check:nth-child(3) .dv_campo00 span{
+		background-color: #203864;
+	}
+	.x-check:nth-child(4) .dv_campo00 span{
+		background-color: #39b0aa;
+	}
+	.x-check:nth-child(5) .dv_campo00 span{
+		background-color: #FF001E;
+	}
+
+
+
+	.dv_campo01{
+	min-height: 100px !important;
+	background-color:#f1f1f1 !important;
+	}
+	.dv_campo02{
+	min-height: 60px !important;
+	}
+	.dv_campo03{
+	min-height: 60px !important;
+	background-color:#f1f1f1 !important;
+	}
+	.dv_campo04{
+	min-height: 100px !important;
+	}
+	.dv_campo05{
+	min-height: 100px !important;
+	background-color:#f1f1f1 !important;
+	}
+	.dv_campo06{
+	min-height: 60px !important;
+	}
+	.dv_campo07{
+	min-height: 60px !important;
+	background-color:#f1f1f1 !important;
+	}
+	.classLabel.checked { background-color: white !important; }.classLabel.checked .lista-atributo{ border: 4px solid rgb(59, 136, 206) !important }.classLabel.hover .lista-atributo{ border: 4px solid rgb(59, 136, 206) !important }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #modalcheckbox .modal-content {
 	width: auto;
 }
@@ -770,6 +927,13 @@ fieldset input.form-control {
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 30px;
 	}
+	.checkrecompensa_grid{
+		display: flex;
+		flex-direction: column;
+	  }
+	  .checkrecompensa_grid *{
+		text-align: center !important;
+	  }
 }
 
 
