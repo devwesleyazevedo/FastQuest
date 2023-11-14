@@ -905,20 +905,6 @@ fieldset input.form-control {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pedidocheckbox_class {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(200px, 1fr));
@@ -1084,6 +1070,102 @@ fieldset input.form-control {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	#vantagemcheckbox .classLabel.checked{
+		border-color:#00b0a9 !important;
+		background-color: #fbec5d !important;
+		}
+	
+		#vantagemcheckbox .lista-atributo div {
+			display: flex;
+			font-size: 14px !important;
+			padding: 5px;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+		}
+		
+		#vantagemcheckbox .lista-atributo {
+			margin-top: 0px !important;
+			border: solid 1px #ccc;
+			min-height: 615px;
+		}
+		
+		#vantagemcheckbox .font-bold {
+			font-weight: bold;
+		}
+		
+		#vantagemcheckbox .dv_campo00 {
+			min-height: 50px !important;
+		}
+		
+		#vantagemcheckbox .dv_campo00 span {
+			border-radius: 10px;
+			padding: 5px 15px;
+			color: #000;
+			font-size: 17px;
+		}
+		
+		#vantagemcheckbox .dv_campo00  p{
+			font-size: 14px;
+			font-weight: 600;
+			color: #000;
+		}
+		
+		#vantagemcheckbox .dv_campo01 {
+			min-height: 100px !important;
+		}
+		
+		#vantagemcheckbox .dv_campo02 {
+			min-height: 60px !important;
+		}
+		
+		#vantagemcheckbox .dv_campo03 {
+			min-height: 60px !important;
+		}
+		
+		#vantagemcheckbox .dv_campo04 {
+			min-height: 100px !important;
+		}
+		
+		#vantagemcheckbox .dv_campo05 {
+			min-height: 100px !important;
+		}
+		
+		#vantagemcheckbox .dv_campo06 {
+			min-height: 60px !important;
+		}
+		
+		#vantagemcheckbox .dv_campo07 {
+			min-height: 60px !important;
+		}
+		
+		#vantagemcheckbox.checked {
+			background-color: white !important;
+		}
+		
+		#vantagemcheckbox.checked .lista-atributo {
+			border: 4px solid rgb(59, 136, 206) !important;
+		}
+		
+		#vantagemcheckbox.hover .lista-atributo {
+			border: 4px solid rgb(59, 136, 206) !important;
+		}
+		
 	
 
 
