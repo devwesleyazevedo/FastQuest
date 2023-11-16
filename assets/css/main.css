@@ -272,7 +272,7 @@ p {
 }
 
 .inputGroup input:checked~label {
-	color: #fff;
+	color: #000;
 }
 
 .inputGroup input:checked~label.cerveja {
@@ -354,6 +354,11 @@ fieldset input.form-control {
 	text-align: center;
 	min-height: 90px;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.escala0a5 .inputGroup input:checked~label {
+   color: #fff;
 }
 
 .escala0a5 .inputGroup label:after {
@@ -549,6 +554,8 @@ fieldset input.form-control {
 	flex: 1;
 }
 
+
+
 .escala0a10 .inputGroup label:after {
 	display: none;
 }
@@ -559,6 +566,11 @@ fieldset input.form-control {
 	font-weight: 600;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+
+.escala0a10 .inputGroup input:checked~label {
+	color: #fff;
+ }
 
 .escala0a10 .inputGroup:nth-child(1) label {
     background-color: rgba(197, 0, 18, 0.7);
@@ -651,7 +663,25 @@ fieldset input.form-control {
 
 
 
-
+.ordem {
+	display: flex;
+    position: absolute;
+    right: 20px;
+    z-index: 5;
+    background: #54e0c7;
+    color: #fff;
+    font-weight: 600;
+    width: 32px;
+    height: 32px;
+    border-radius: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 
 
@@ -699,7 +729,9 @@ fieldset input.form-control {
 	background-color: #000000;
 }
 
-
+.inputGroup input~label {
+	border: 5px solid #fff;
+}
 .inputGroup input:checked~label {
     border: 5px solid #54E0C7;
 }
@@ -1611,6 +1643,7 @@ textarea.form-control {
 .col-table-flex .item-table label {
 	font-size: 15px;
 	font-weight: 500;
+	padding: 15px 10px !important;
 }
 
 .col-table-flex .item-table b {
