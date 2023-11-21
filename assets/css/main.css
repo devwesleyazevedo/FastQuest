@@ -57,7 +57,7 @@ fieldset:not(:first-of-type) {
 }
 
 form#idform {
-	max-width: 1000px;
+	/* max-width: 1000px; */
 	border: 1px solid var(--neutral-300, #EFF0F6);
 	background: var(--neutral-100, #FFF);
 	box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
@@ -801,7 +801,7 @@ fieldset input.form-control {
 
 .checkrecompensa_grid{
 	display: grid;
-	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	grid-template-columns: repeat(5, minmax(200px, 1fr));
 	gap: 10px;
   }
   .checkrecompensa_grid label{
@@ -817,12 +817,17 @@ fieldset input.form-control {
   .checkrecompensa_grid .x-check {
 	width: 100% !important;
   }
-.checkrecompensa_grid .x-check:nth-child(5) {
-	grid-column: span 4;
+.checkrecompensa_grid .x-check:nth-child(6) {
+	grid-column: span 5;
 }
-.checkrecompensa_grid .x-check:nth-child(5) .lista-atributo{
+.checkrecompensa_grid .x-check:nth-child(6) .lista-atributo{
 	min-height: initial !important;
 }
+
+
+
+
+
 
 .checkrecompensa_grid .x-check:nth-child(1) label:after{
 	display: none;
@@ -884,9 +889,11 @@ fieldset input.form-control {
 	}
 	
 	#recompensacheckbox .x-check:nth-child(5) .dv_campo00 span {
+		background-color: #203864;
+	}
+	#recompensacheckbox .x-check:nth-child(6) .dv_campo00 span {
 		background-color: #FF001E;
 	}
-	
 	#recompensacheckbox .dv_campo01 {
 		min-height: 100px !important;
 		background-color: #f1f1f1 !important;
